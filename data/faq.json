@@ -1,0 +1,1804 @@
+{
+ "faq": [
+  {
+   "id": "what_is_insurance",
+   "video": null,
+   "answer": "Insurance is a contract where you pay a premium and the insurance company agrees to help pay for covered losses, up to the policy limits. You usually pay a deductible first, and what is covered depends on the policy you choose.",
+   "speech": "Insurance is a contract where you pay a premium and the insurance company agrees to help pay for covered losses, up to the policy limits. You usually pay a deductible first, and what is covered depends on the policy you choose.",
+   "questions": [
+    "What is insurance, and how does it work?",
+    "what is insurance",
+    "how does insurance work",
+    "explain insurance to me",
+    "what does insurance mean",
+    "can you explain how an insurance policy works",
+    "what is an insurance policy",
+    "how do insurance companies pay for losses",
+    "i don't understand insurance, how does it work",
+    "what am i paying for with insurance"
+   ]
+  },
+  {
+   "id": "why_insurance",
+   "video": null,
+   "answer": "Insurance protects you from large, unexpected costs, like an accident, a fire, a lawsuit or a damaged car, that could be hard to pay on your own. Some insurance is also required, such as car insurance to drive or a homeowners policy for a mortgage.",
+   "speech": "Insurance protects you from large, unexpected costs, like an accident, a fire, a lawsuit or a damaged car, that could be hard to pay on your own. Some insurance is also required, such as car insurance to drive or a homeowners policy for a mortgage.",
+   "questions": [
+    "Why do I need insurance?",
+    "why should i get insurance",
+    "is insurance worth it",
+    "do i really need insurance",
+    "what is the point of insurance",
+    "why is insurance important",
+    "what are the benefits of insurance",
+    "why buy insurance",
+    "is it necessary to have insurance",
+    "what happens if i don't have insurance"
+   ]
+  },
+  {
+   "id": "types_offered",
+   "video": "services_overview",
+   "answer": "We offer home, auto and umbrella insurance, plus business coverage including commercial auto, workers' compensation, liability, cyber, bonds and event insurance.",
+   "speech": "We offer home, auto and umbrella insurance, plus business coverage including commercial auto, workers' compensation, liability, cyber, bonds and event insurance.",
+   "questions": [
+    "What types of insurance do you offer?",
+    "what insurance products do you have",
+    "which insurance do you sell",
+    "what coverage can i buy here",
+    "list your insurance services",
+    "what kinds of insurance can you help with",
+    "what policies do you offer",
+    "do you offer personal and business insurance",
+    "what lines of insurance do you write",
+    "what can you insure"
+   ]
+  },
+  {
+   "id": "how_much_coverage",
+   "video": null,
+   "answer": "The right amount depends on what you own, what you could lose and any legal or lender requirements. We can't recommend an exact amount here, but an advisor can review your situation with you. Please call us at (703) 627-0444 and an advisor can help.",
+   "speech": "The right amount depends on what you own, what you could lose and any legal or lender requirements. We can't recommend an exact amount here, but an advisor can review your situation with you. Please call us at seven zero three, six two seven, zero four four four and an advisor can help.",
+   "questions": [
+    "How much insurance coverage do I need?",
+    "how much coverage should i get",
+    "what coverage limits should i choose",
+    "how do i know how much insurance to buy",
+    "am i underinsured",
+    "what is the right amount of coverage",
+    "how much insurance is enough",
+    "what limits do you recommend",
+    "should i get more coverage",
+    "how high should my coverage be"
+   ]
+  },
+  {
+   "id": "premium_cost",
+   "video": null,
+   "answer": "Premiums depend on things like the type of coverage, limits, deductible, location and your history, so we can't quote a price here. For an accurate quote, call us at (703) 627-0444 or use the quote form on sahaagency.com.",
+   "speech": "Premiums depend on things like the type of coverage, limits, deductible, location and your history, so we can't quote a price here. For an accurate quote, call us at seven zero three, six two seven, zero four four four or use the quote form on saha agency dot com.",
+   "questions": [
+    "How much will my monthly insurance premium cost?",
+    "how much is insurance per month",
+    "what will my premium be",
+    "how much does insurance cost",
+    "what is the price of a policy",
+    "give me a price for insurance",
+    "how expensive is insurance",
+    "what's the monthly cost",
+    "can you tell me my rate",
+    "how much do i have to pay for insurance"
+   ]
+  },
+  {
+   "id": "premium_vs_deductible",
+   "video": null,
+   "answer": "The premium is what you pay to keep your policy active, monthly or yearly. The deductible is the amount you pay out of pocket on a claim before the insurance company pays the rest of a covered loss.",
+   "speech": "The premium is what you pay to keep your policy active, monthly or yearly. The deductible is the amount you pay out of pocket on a claim before the insurance company pays the rest of a covered loss.",
+   "questions": [
+    "What is the difference between a premium and a deductible?",
+    "what is a deductible",
+    "what is a premium",
+    "premium vs deductible",
+    "explain deductible",
+    "what does deductible mean",
+    "what does premium mean",
+    "how does a deductible work",
+    "is the deductible the same as the premium",
+    "what's the difference between premium and deductible"
+   ]
+  },
+  {
+   "id": "free_quote",
+   "video": "get_quote",
+   "answer": "Getting a quote is easy. Call us at (703) 627-0444, email us, or use the quote form on our website, and an advisor will confirm your pricing and coverage options.",
+   "speech": "Getting a quote is easy. Call us at seven zero three, six two seven, zero four four four, email us, or use the quote form on our website, and an advisor will confirm your pricing and coverage options.",
+   "questions": [
+    "How can I get a free insurance quote?",
+    "can i get a free quote",
+    "is the quote free",
+    "i want a free quote",
+    "how do i request a quote",
+    "where can i get an insurance quote",
+    "get me a quote",
+    "quote please",
+    "how do i get pricing",
+    "can you quote me"
+   ]
+  },
+  {
+   "id": "multiple_policies",
+   "video": null,
+   "answer": "Yes, many people keep several policies, like home, auto and umbrella, through the same agency, and some carriers offer bundling savings. Eligibility and discounts depend on the carrier. Please call us at (703) 627-0444 and an advisor can help.",
+   "speech": "Yes, many people keep several policies, like home, auto and umbrella, through the same agency, and some carriers offer bundling savings. Eligibility and discounts depend on the carrier. Please call us at seven zero three, six two seven, zero four four four and an advisor can help.",
+   "questions": [
+    "Can I purchase multiple insurance policies from the same company?",
+    "can i have all my policies with you",
+    "can i buy more than one policy",
+    "can i get home and auto together",
+    "do you handle multiple policies",
+    "can i put everything under one agency",
+    "can i combine my policies",
+    "one agency for all my insurance",
+    "can i add another policy",
+    "can i have business and personal insurance with you"
+   ]
+  },
+  {
+   "id": "lower_costs",
+   "video": null,
+   "answer": "Common ways to lower costs include bundling policies, choosing a higher deductible, keeping a clean record, and comparing quotes from several carriers. As an independent agency we can compare options for you. Call (703) 627-0444.",
+   "speech": "Common ways to lower costs include bundling policies, choosing a higher deductible, keeping a clean record, and comparing quotes from several carriers. As an independent agency we can compare options for you. Call seven zero three, six two seven, zero four four four.",
+   "questions": [
+    "How can I lower my insurance costs?",
+    "how do i save money on insurance",
+    "how to reduce my premium",
+    "my insurance is too expensive",
+    "can you help me pay less for insurance",
+    "ways to cut insurance costs",
+    "how to get cheaper insurance",
+    "tips to lower my insurance bill",
+    "how do i get a lower rate",
+    "insurance savings tips"
+   ]
+  },
+  {
+   "id": "best_company",
+   "video": null,
+   "answer": "The best company depends on your needs, budget and the coverage you want. As an independent agency, we compare options from multiple insurance carriers to help you choose. Call (703) 627-0444 to talk with an advisor.",
+   "speech": "The best company depends on your needs, budget and the coverage you want. As an independent agency, we compare options from multiple insurance carriers to help you choose. Call seven zero three, six two seven, zero four four four to talk with an advisor.",
+   "questions": [
+    "How do I know which insurance company is best for me?",
+    "which insurance company is the best",
+    "what is the best insurance company",
+    "who has the best insurance",
+    "which carrier should i choose",
+    "how do i pick an insurance company",
+    "recommend an insurance company",
+    "best insurer for me",
+    "which company gives the best coverage",
+    "how to choose an insurance provider"
+   ]
+  },
+  {
+   "id": "auto_cost",
+   "video": null,
+   "answer": "Car insurance prices depend on the driver, the vehicle, your location, coverage and deductible, so we can't give a price here. Call us at (703) 627-0444 or request a quote on our website, and an advisor will compare options for you.",
+   "speech": "Car insurance prices depend on the driver, the vehicle, your location, coverage and deductible, so we can't give a price here. Call us at seven zero three, six two seven, zero four four four or request a quote on our website, and an advisor will compare options for you.",
+   "questions": [
+    "How much does car insurance cost per month?",
+    "how much is car insurance",
+    "auto insurance price",
+    "how much is auto insurance a month",
+    "what does car insurance cost",
+    "average car insurance cost",
+    "car insurance rates",
+    "how much would it cost to insure my car",
+    "price of auto insurance",
+    "how expensive is car insurance"
+   ]
+  },
+  {
+   "id": "auto_minimum",
+   "video": null,
+   "answer": "Every state sets its own minimum. In Virginia, policies starting in 2025 or later must carry at least 50,000 dollars of bodily injury per person, 100,000 per accident, and 25,000 of property damage liability, plus matching uninsured motorist coverage. An advisor can confirm what applies to you.",
+   "speech": "Every state sets its own minimum. In Virginia, policies starting in 2025 or later must carry at least 50,000 dollars of bodily injury per person, 100,000 per accident, and 25,000 of property damage liability, plus matching uninsured motorist coverage. An advisor can confirm what applies to you.",
+   "questions": [
+    "What is the minimum car insurance required in my state?",
+    "what is the minimum car insurance in virginia",
+    "minimum auto insurance requirements",
+    "how much car insurance is required by law",
+    "virginia car insurance requirements",
+    "what are the state minimum limits",
+    "what insurance do i legally need to drive",
+    "is car insurance required in virginia",
+    "minimum liability coverage",
+    "what is the legal minimum for auto insurance"
+   ]
+  },
+  {
+   "id": "full_vs_liability",
+   "video": null,
+   "answer": "Liability-only covers damage and injuries you cause to others. Full coverage usually adds collision and comprehensive, which help pay to repair or replace your own car after an accident, theft, weather or other covered events.",
+   "speech": "Liability-only covers damage and injuries you cause to others. Full coverage usually adds collision and comprehensive, which help pay to repair or replace your own car after an accident, theft, weather or other covered events.",
+   "questions": [
+    "What is the difference between full coverage and liability-only insurance?",
+    "full coverage vs liability",
+    "what is full coverage",
+    "what is liability only",
+    "should i get full coverage or liability",
+    "what does full coverage include",
+    "what is collision and comprehensive",
+    "is liability insurance enough",
+    "difference between liability and full coverage",
+    "what does liability only cover"
+   ]
+  },
+  {
+   "id": "at_fault_accident",
+   "video": null,
+   "answer": "Liability coverage pays for damage and injuries you cause to others. Repairs to your own car after an at-fault accident are usually covered only if you have collision coverage, minus your deductible.",
+   "speech": "Liability coverage pays for damage and injuries you cause to others. Repairs to your own car after an at-fault accident are usually covered only if you have collision coverage, minus your deductible.",
+   "questions": [
+    "Does my car insurance cover accidents that are my fault?",
+    "what if the accident was my fault",
+    "am i covered if i cause an accident",
+    "does insurance pay if i'm at fault",
+    "at fault accident coverage",
+    "will insurance fix my car if i hit someone",
+    "i caused an accident, am i covered",
+    "does auto insurance cover my mistakes",
+    "who pays if the accident is my fault",
+    "is my car covered when i'm at fault"
+   ]
+  },
+  {
+   "id": "premium_after_accident",
+   "video": null,
+   "answer": "An at-fault accident often raises premiums at renewal, but it depends on the insurance company, the claim and your history. Some carriers offer accident forgiveness. An advisor can explain your options. Call (703) 627-0444.",
+   "speech": "An at-fault accident often raises premiums at renewal, but it depends on the insurance company, the claim and your history. Some carriers offer accident forgiveness. An advisor can explain your options. Call seven zero three, six two seven, zero four four four.",
+   "questions": [
+    "Will my insurance premium increase after an accident?",
+    "will my rates go up after an accident",
+    "does an accident raise my insurance",
+    "how much will my premium go up after a crash",
+    "accident forgiveness",
+    "will my insurance increase if i have an accident",
+    "do rates go up after a claim on my car",
+    "will one accident raise my rates",
+    "does my premium change after an accident",
+    "insurance after a car accident cost"
+   ]
+  },
+  {
+   "id": "bad_record",
+   "video": null,
+   "answer": "Yes, drivers with tickets or accidents can usually still get coverage, though prices may be higher. Since we work with multiple insurance carriers, we can look for options that fit. Call (703) 627-0444.",
+   "speech": "Yes, drivers with tickets or accidents can usually still get coverage, though prices may be higher. Since we work with multiple insurance carriers, we can look for options that fit. Call seven zero three, six two seven, zero four four four.",
+   "questions": [
+    "Can I get car insurance with a bad driving record?",
+    "i have tickets can i get insurance",
+    "can i get insurance with a dui",
+    "high risk driver insurance",
+    "i have accidents on my record, can you insure me",
+    "car insurance with points on my license",
+    "can i get insured after a speeding ticket",
+    "insurance for bad drivers",
+    "will anyone insure me with a bad record",
+    "sr22 insurance"
+   ]
+  },
+  {
+   "id": "rental_cars",
+   "video": null,
+   "answer": "Many auto policies extend some coverage to rental cars, and rental reimbursement can be added to pay for a rental while your car is being repaired. It depends on your policy, so an advisor can check. Call (703) 627-0444.",
+   "speech": "Many auto policies extend some coverage to rental cars, and rental reimbursement can be added to pay for a rental while your car is being repaired. It depends on your policy, so an advisor can check. Call seven zero three, six two seven, zero four four four.",
+   "questions": [
+    "Does my auto insurance cover rental cars?",
+    "am i covered when i rent a car",
+    "rental car insurance",
+    "do i need insurance at the rental counter",
+    "does my policy cover a rental",
+    "rental reimbursement coverage",
+    "will insurance pay for a rental car after an accident",
+    "is a rental car covered by my insurance",
+    "should i buy the rental company's insurance",
+    "rental car coverage"
+   ]
+  },
+  {
+   "id": "add_family_auto",
+   "video": null,
+   "answer": "Yes, you can usually add your spouse and licensed children or other household drivers to your auto policy. Adding a driver can change your premium. Please call us at (703) 627-0444 and an advisor can help.",
+   "speech": "Yes, you can usually add your spouse and licensed children or other household drivers to your auto policy. Adding a driver can change your premium. Please call us at seven zero three, six two seven, zero four four four and an advisor can help.",
+   "questions": [
+    "Can I add my spouse or children to my auto insurance policy?",
+    "can i add my wife to my car insurance",
+    "can i add my teenager to my policy",
+    "add a driver to my auto insurance",
+    "can my husband be on my car insurance",
+    "how do i add my son to my car insurance",
+    "add my daughter to my auto policy",
+    "can i add a family member to my car insurance",
+    "how to add a new driver",
+    "insurance for my teen driver"
+   ]
+  },
+  {
+   "id": "someone_else_drives",
+   "video": null,
+   "answer": "In many cases insurance follows the car, so your policy may respond when someone you allowed to drive has an accident, but it depends on the policy and the driver. An advisor can review your coverage. Call (703) 627-0444.",
+   "speech": "In many cases insurance follows the car, so your policy may respond when someone you allowed to drive has an accident, but it depends on the policy and the driver. An advisor can review your coverage. Call seven zero three, six two seven, zero four four four.",
+   "questions": [
+    "What happens if someone drives my car and gets into an accident?",
+    "my friend crashed my car, am i covered",
+    "does my insurance cover other drivers",
+    "if i lend my car is it covered",
+    "permissive driver coverage",
+    "someone else was driving my car in an accident",
+    "does insurance follow the car or the driver",
+    "can other people drive my insured car",
+    "who pays if my friend wrecks my car",
+    "is my car covered if someone borrows it"
+   ]
+  },
+  {
+   "id": "uninsured_driver",
+   "video": null,
+   "answer": "Uninsured and underinsured motorist coverage helps pay for your injuries, and in some cases your car, when the at-fault driver has no insurance or not enough. Virginia requires this coverage on auto policies. Your limits depend on your policy.",
+   "speech": "Uninsured and underinsured motorist coverage helps pay for your injuries, and in some cases your car, when the at-fault driver has no insurance or not enough. Virginia requires this coverage on auto policies. Your limits depend on your policy.",
+   "questions": [
+    "Does my insurance cover an uninsured or underinsured driver?",
+    "what if the other driver has no insurance",
+    "uninsured motorist coverage",
+    "underinsured motorist coverage",
+    "i was hit by an uninsured driver",
+    "what is um uim coverage",
+    "the driver who hit me has no insurance",
+    "who pays if the other driver is uninsured",
+    "does my policy cover hit and run",
+    "what is uninsured motorist"
+   ]
+  },
+  {
+   "id": "home_covers",
+   "video": null,
+   "answer": "Homeowners insurance generally helps protect your home's structure, your belongings, and your liability if someone is hurt on your property, and it may cover extra living costs after a covered loss. What is covered depends on the policy, limits and exclusions.",
+   "speech": "Homeowners insurance generally helps protect your home's structure, your belongings, and your liability if someone is hurt on your property, and it may cover extra living costs after a covered loss. What is covered depends on the policy, limits and exclusions.",
+   "questions": [
+    "What does homeowners insurance cover?",
+    "what is covered by home insurance",
+    "what does a home policy include",
+    "what does house insurance protect",
+    "explain homeowners insurance",
+    "what is homeowners insurance",
+    "what's included in homeowners coverage",
+    "what does my home insurance pay for",
+    "homeowners coverage details",
+    "how does home insurance work"
+   ]
+  },
+  {
+   "id": "home_cost",
+   "video": null,
+   "answer": "Homeowners insurance prices depend on the home's value, age, location, coverage and deductible, so we can't give a price here. Call us at (703) 627-0444 for a quote.",
+   "speech": "Homeowners insurance prices depend on the home's value, age, location, coverage and deductible, so we can't give a price here. Call us at seven zero three, six two seven, zero four four four for a quote.",
+   "questions": [
+    "How much does homeowners insurance cost?",
+    "how much is home insurance",
+    "home insurance price",
+    "how much is house insurance per month",
+    "average homeowners insurance cost",
+    "what will home insurance cost me",
+    "price for homeowners insurance",
+    "how expensive is home insurance",
+    "homeowners insurance rates",
+    "cost to insure my house"
+   ]
+  },
+  {
+   "id": "home_required",
+   "video": null,
+   "answer": "No law requires homeowners insurance, but if you have a mortgage, your lender almost always requires it. Even without a mortgage, it protects one of your biggest investments.",
+   "speech": "No law requires homeowners insurance, but if you have a mortgage, your lender almost always requires it. Even without a mortgage, it protects one of your biggest investments.",
+   "questions": [
+    "Is homeowners insurance required by law?",
+    "do i have to have home insurance",
+    "is home insurance mandatory",
+    "is homeowners insurance required",
+    "does the law require house insurance",
+    "do i need homeowners insurance if i own my house",
+    "does my mortgage require insurance",
+    "is home insurance optional",
+    "do i legally need home insurance",
+    "must i buy homeowners insurance"
+   ]
+  },
+  {
+   "id": "home_fire",
+   "video": null,
+   "answer": "Fire is a covered cause of loss in most standard homeowners policies, which can help repair your home and replace belongings, subject to your limits and deductible. An advisor can confirm your policy's details.",
+   "speech": "Fire is a covered cause of loss in most standard homeowners policies, which can help repair your home and replace belongings, subject to your limits and deductible. An advisor can confirm your policy's details.",
+   "questions": [
+    "Does homeowners insurance cover fire damage?",
+    "is fire covered by home insurance",
+    "what if my house burns down",
+    "does insurance pay for fire damage",
+    "kitchen fire coverage",
+    "is smoke damage covered",
+    "fire damage claim",
+    "my house caught fire am i covered",
+    "home insurance and fire",
+    "does house insurance cover fires"
+   ]
+  },
+  {
+   "id": "home_flood",
+   "video": null,
+   "answer": "Standard homeowners policies usually do not cover flood damage. Flood coverage is normally a separate policy, such as through the National Flood Insurance Program. Call (703) 627-0444 and an advisor can talk with you about flood options.",
+   "speech": "Standard homeowners policies usually do not cover flood damage. Flood coverage is normally a separate policy, such as through the National Flood Insurance Program. Call seven zero three, six two seven, zero four four four and an advisor can talk with you about flood options.",
+   "questions": [
+    "Does homeowners insurance cover flood damage?",
+    "is flooding covered",
+    "do i need flood insurance",
+    "flood insurance",
+    "does home insurance cover water from a flood",
+    "is flood damage covered by my policy",
+    "storm surge coverage",
+    "my basement flooded is it covered",
+    "how do i get flood insurance",
+    "is rising water covered"
+   ]
+  },
+  {
+   "id": "home_roof_storm",
+   "video": null,
+   "answer": "Many homeowners policies cover sudden storm damage to a roof, like wind or hail, subject to your deductible. Wear and tear or old age usually isn't covered, and some policies pay roofs based on age. An advisor can review your policy.",
+   "speech": "Many homeowners policies cover sudden storm damage to a roof, like wind or hail, subject to your deductible. Wear and tear or old age usually isn't covered, and some policies pay roofs based on age. An advisor can review your policy.",
+   "questions": [
+    "Does homeowners insurance cover roof damage from storms?",
+    "is my roof covered",
+    "hail damage to roof",
+    "wind damaged my roof",
+    "will insurance replace my roof",
+    "roof leak coverage",
+    "storm damage claim",
+    "does home insurance pay for a new roof",
+    "tree fell on my roof",
+    "roof damage insurance"
+   ]
+  },
+  {
+   "id": "home_injury",
+   "video": null,
+   "answer": "The liability part of a homeowners policy can help pay for a guest's medical bills or legal costs if they are hurt on your property and you are responsible, up to your limits. Many policies also include small medical payments coverage.",
+   "speech": "The liability part of a homeowners policy can help pay for a guest's medical bills or legal costs if they are hurt on your property and you are responsible, up to your limits. Many policies also include small medical payments coverage.",
+   "questions": [
+    "What happens if someone gets injured on my property?",
+    "someone slipped at my house",
+    "guest injury coverage",
+    "am i liable if someone falls at my home",
+    "does home insurance cover injuries to visitors",
+    "personal liability coverage",
+    "dog bite coverage",
+    "someone got hurt at my house",
+    "premises liability home",
+    "medical payments coverage"
+   ]
+  },
+  {
+   "id": "home_theft",
+   "video": null,
+   "answer": "Yes, homeowners policies usually cover personal belongings stolen from your home, and often away from home too, subject to limits and your deductible. Valuable items like jewelry may need extra coverage.",
+   "speech": "Yes, homeowners policies usually cover personal belongings stolen from your home, and often away from home too, subject to limits and your deductible. Valuable items like jewelry may need extra coverage.",
+   "questions": [
+    "Does homeowners insurance cover stolen personal belongings?",
+    "is theft covered",
+    "my stuff was stolen",
+    "burglary coverage",
+    "does home insurance cover theft",
+    "someone broke into my house",
+    "stolen jewelry coverage",
+    "are my belongings covered if stolen",
+    "personal property theft",
+    "stolen items claim"
+   ]
+  },
+  {
+   "id": "bundle_home_auto",
+   "video": null,
+   "answer": "Yes, bundling home and auto with the same insurance company often earns a discount, though savings depend on the carrier. We can compare bundled and separate options for you. Call (703) 627-0444.",
+   "speech": "Yes, bundling home and auto with the same insurance company often earns a discount, though savings depend on the carrier. We can compare bundled and separate options for you. Call seven zero three, six two seven, zero four four four.",
+   "questions": [
+    "Can I bundle my home and auto insurance to save money?",
+    "bundle home and auto",
+    "home and car insurance together",
+    "do you offer a bundle discount",
+    "multi policy discount",
+    "can i save by bundling",
+    "package home and auto",
+    "is bundling cheaper",
+    "combine house and car insurance",
+    "bundle my policies"
+   ]
+  },
+  {
+   "id": "home_how_much",
+   "video": null,
+   "answer": "Your dwelling coverage should generally reflect the cost to rebuild your home, not its market price, and your other limits depend on your belongings and assets. We can't set an amount here, but an advisor can help. Call (703) 627-0444.",
+   "speech": "Your dwelling coverage should generally reflect the cost to rebuild your home, not its market price, and your other limits depend on your belongings and assets. We can't set an amount here, but an advisor can help. Call seven zero three, six two seven, zero four four four.",
+   "questions": [
+    "How much homeowners insurance coverage do I need?",
+    "how much dwelling coverage do i need",
+    "how much should i insure my house for",
+    "replacement cost for my home",
+    "what limits for home insurance",
+    "how much coverage for my house",
+    "should i insure for market value",
+    "how much personal property coverage",
+    "is my home underinsured",
+    "how do i choose home coverage limits"
+   ]
+  },
+  {
+   "id": "renters_what",
+   "video": null,
+   "answer": "Renters insurance helps protect your belongings and personal liability when you rent; your landlord's policy doesn't cover your things. Renters insurance isn't on our listed services, so please call (703) 627-0444 to ask whether an advisor can help.",
+   "speech": "Renters insurance helps protect your belongings and personal liability when you rent; your landlord's policy doesn't cover your things. Renters insurance isn't on our listed services, so please call seven zero three, six two seven, zero four four four to ask whether an advisor can help.",
+   "questions": [
+    "What is renters insurance, and do I need it?",
+    "what is renters insurance",
+    "do i need renters insurance",
+    "do you offer renters insurance",
+    "renters insurance",
+    "insurance for my apartment",
+    "tenant insurance",
+    "should i get renters insurance",
+    "does my landlord's insurance cover me",
+    "apartment insurance"
+   ]
+  },
+  {
+   "id": "renters_cost",
+   "video": null,
+   "answer": "Renters insurance is often one of the less expensive policies, but the price depends on your belongings, location and deductible. Please call (703) 627-0444 to ask an advisor about options.",
+   "speech": "Renters insurance is often one of the less expensive policies, but the price depends on your belongings, location and deductible. Please call seven zero three, six two seven, zero four four four to ask an advisor about options.",
+   "questions": [
+    "How much does renters insurance cost per month?",
+    "how much is renters insurance",
+    "renters insurance price",
+    "cost of renters insurance",
+    "is renters insurance cheap",
+    "monthly cost for renters insurance",
+    "how expensive is renters insurance",
+    "average renters insurance",
+    "renters insurance rates",
+    "price of tenant insurance"
+   ]
+  },
+  {
+   "id": "renters_theft",
+   "video": null,
+   "answer": "Renters insurance usually covers personal belongings stolen from your home and often away from home, subject to limits and the deductible. Coverage depends on the policy. Call (703) 627-0444 to ask an advisor.",
+   "speech": "Renters insurance usually covers personal belongings stolen from your home and often away from home, subject to limits and the deductible. Coverage depends on the policy. Call seven zero three, six two seven, zero four four four to ask an advisor.",
+   "questions": [
+    "Does renters insurance cover theft and personal belongings?",
+    "does renters insurance cover theft",
+    "renters insurance stolen items",
+    "are my things covered as a renter",
+    "my apartment was robbed",
+    "renters personal property coverage",
+    "is my laptop covered by renters insurance",
+    "renters burglary coverage",
+    "does renters insurance cover my stuff",
+    "belongings coverage for renters"
+   ]
+  },
+  {
+   "id": "renters_damage",
+   "video": null,
+   "answer": "Renters insurance liability coverage may help pay for accidental damage you cause to your apartment or a neighbor's unit, depending on the cause and the policy. Call (703) 627-0444 and an advisor can explain.",
+   "speech": "Renters insurance liability coverage may help pay for accidental damage you cause to your apartment or a neighbor's unit, depending on the cause and the policy. Call seven zero three, six two seven, zero four four four and an advisor can explain.",
+   "questions": [
+    "Does renters insurance cover accidental damage to my apartment?",
+    "i damaged my apartment",
+    "renters insurance accidental damage",
+    "i flooded my neighbor's apartment",
+    "damage to rental unit coverage",
+    "does renters insurance pay for damage i caused",
+    "renters liability coverage",
+    "i broke something in my apartment",
+    "damage to landlord property",
+    "accidental fire in my apartment"
+   ]
+  },
+  {
+   "id": "landlord_require",
+   "video": null,
+   "answer": "Yes, in many cases a landlord can require tenants to carry renters insurance as part of the lease, as long as it follows local law. Check your lease for the requirement.",
+   "speech": "Yes, in many cases a landlord can require tenants to carry renters insurance as part of the lease, as long as it follows local law. Check your lease for the requirement.",
+   "questions": [
+    "Can my landlord require me to purchase renters insurance?",
+    "my landlord says i need renters insurance",
+    "is renters insurance required",
+    "can a lease require insurance",
+    "do i have to buy renters insurance",
+    "is renters insurance mandatory",
+    "landlord requires insurance",
+    "is it legal to require renters insurance",
+    "lease says i need insurance",
+    "must tenants have insurance"
+   ]
+  },
+  {
+   "id": "landlord_what",
+   "video": null,
+   "answer": "Landlord insurance protects a property you rent to others, usually covering the building, your liability as the owner, and sometimes lost rental income. It's not on our listed services, so please call (703) 627-0444 to ask whether an advisor can help.",
+   "speech": "Landlord insurance protects a property you rent to others, usually covering the building, your liability as the owner, and sometimes lost rental income. It's not on our listed services, so please call seven zero three, six two seven, zero four four four to ask whether an advisor can help.",
+   "questions": [
+    "What is landlord insurance?",
+    "do you offer landlord insurance",
+    "landlord insurance",
+    "insurance for rental property",
+    "rental property insurance",
+    "dwelling fire policy",
+    "insurance for my rental house",
+    "what does landlord insurance cover",
+    "insurance for property i rent out",
+    "do you insure rental homes"
+   ]
+  },
+  {
+   "id": "landlord_tenant_damage",
+   "video": null,
+   "answer": "Landlord policies often cover sudden damage from covered causes, but intentional damage or normal wear by tenants may be excluded or limited. It depends on the policy. Please call (703) 627-0444 to ask an advisor.",
+   "speech": "Landlord policies often cover sudden damage from covered causes, but intentional damage or normal wear by tenants may be excluded or limited. It depends on the policy. Please call seven zero three, six two seven, zero four four four to ask an advisor.",
+   "questions": [
+    "Does landlord insurance cover property damage caused by tenants?",
+    "tenant damaged my property",
+    "does landlord insurance cover tenant damage",
+    "my renter destroyed my house",
+    "vandalism by tenants",
+    "is tenant damage covered",
+    "landlord insurance tenant caused damage",
+    "who pays when tenants damage the unit",
+    "tenant broke things in my rental",
+    "damage by renters coverage"
+   ]
+  },
+  {
+   "id": "landlord_lost_rent",
+   "video": null,
+   "answer": "Many landlord policies can include loss of rent coverage, which helps replace rental income if a covered loss makes the property unlivable. It depends on the policy. Please call (703) 627-0444 to ask an advisor.",
+   "speech": "Many landlord policies can include loss of rent coverage, which helps replace rental income if a covered loss makes the property unlivable. It depends on the policy. Please call seven zero three, six two seven, zero four four four to ask an advisor.",
+   "questions": [
+    "Does landlord insurance cover lost rental income?",
+    "loss of rent coverage",
+    "lost rental income insurance",
+    "if my rental is damaged do i lose rent",
+    "fair rental value coverage",
+    "rental income protection",
+    "does insurance pay my rent if the house is damaged",
+    "landlord income loss",
+    "can i insure my rental income",
+    "rent loss coverage"
+   ]
+  },
+  {
+   "id": "insure_rental_property",
+   "video": null,
+   "answer": "Yes, rental properties can be insured, usually with a landlord or dwelling policy rather than a regular homeowners policy. Please call (703) 627-0444 to ask an advisor about options.",
+   "speech": "Yes, rental properties can be insured, usually with a landlord or dwelling policy rather than a regular homeowners policy. Please call seven zero three, six two seven, zero four four four to ask an advisor about options.",
+   "questions": [
+    "Can I insure a property that I rent out to tenants?",
+    "can i insure my rental house",
+    "how do i insure a house i rent out",
+    "insurance for a property i lease",
+    "can you insure my investment property",
+    "insure my airbnb",
+    "i rent my condo out what insurance do i need",
+    "insurance for rental units",
+    "can i get coverage for my rental property",
+    "insurance for a duplex i rent"
+   ]
+  },
+  {
+   "id": "home_vs_landlord",
+   "video": null,
+   "answer": "Homeowners insurance is for a home you live in and covers your belongings. Landlord insurance is for a property you rent to others and focuses on the building, owner liability and lost rent; the tenant's belongings aren't covered.",
+   "speech": "Homeowners insurance is for a home you live in and covers your belongings. Landlord insurance is for a property you rent to others and focuses on the building, owner liability and lost rent; the tenant's belongings aren't covered.",
+   "questions": [
+    "What is the difference between homeowners insurance and landlord insurance?",
+    "homeowners vs landlord insurance",
+    "do i need landlord insurance or homeowners",
+    "can i use homeowners insurance for a rental",
+    "landlord vs home policy",
+    "what's the difference between home and landlord insurance",
+    "homeowners policy on a rental property",
+    "is landlord insurance different from homeowners",
+    "which policy for a rented house",
+    "landlord or homeowners policy"
+   ]
+  },
+  {
+   "id": "life_what",
+   "video": null,
+   "answer": "Life insurance pays money to the people you choose if you pass away, helping them cover expenses like a mortgage, debts or living costs. Life insurance isn't on our listed services, so please call (703) 627-0444 to ask whether an advisor can help.",
+   "speech": "Life insurance pays money to the people you choose if you pass away, helping them cover expenses like a mortgage, debts or living costs. Life insurance isn't on our listed services, so please call seven zero three, six two seven, zero four four four to ask whether an advisor can help.",
+   "questions": [
+    "What is life insurance, and why is it important?",
+    "what is life insurance",
+    "do you offer life insurance",
+    "do you sell life insurance",
+    "life insurance",
+    "why do i need life insurance",
+    "is life insurance important",
+    "how does life insurance work",
+    "can i buy life insurance here",
+    "life policy"
+   ]
+  },
+  {
+   "id": "life_how_much",
+   "video": null,
+   "answer": "The right amount depends on your income, debts and the people who rely on you, and we can't recommend an amount here. Please call (703) 627-0444 to ask an advisor.",
+   "speech": "The right amount depends on your income, debts and the people who rely on you, and we can't recommend an amount here. Please call seven zero three, six two seven, zero four four four to ask an advisor.",
+   "questions": [
+    "How much life insurance do I need?",
+    "how much life insurance should i get",
+    "how much life coverage do i need",
+    "life insurance amount",
+    "what face amount should i buy",
+    "how big a life policy do i need",
+    "is 500000 life insurance enough",
+    "how to calculate life insurance needs",
+    "life insurance coverage amount",
+    "how much should my life insurance be"
+   ]
+  },
+  {
+   "id": "term_vs_whole",
+   "video": null,
+   "answer": "Term life covers you for a set period, like 10, 20 or 30 years, and usually costs less. Whole life lasts your entire life and builds cash value, but typically costs more.",
+   "speech": "Term life covers you for a set period, like 10, 20 or 30 years, and usually costs less. Whole life lasts your entire life and builds cash value, but typically costs more.",
+   "questions": [
+    "What is the difference between term life and whole life insurance?",
+    "term vs whole life",
+    "what is term life",
+    "what is whole life insurance",
+    "should i get term or whole life",
+    "term life insurance",
+    "whole life insurance",
+    "difference between term and permanent life",
+    "what is cash value life insurance",
+    "which is better term or whole life"
+   ]
+  },
+  {
+   "id": "life_cost",
+   "video": null,
+   "answer": "Life insurance prices depend on age, health, the amount and the type of policy, so we can't give a price here. Please call (703) 627-0444 to ask an advisor.",
+   "speech": "Life insurance prices depend on age, health, the amount and the type of policy, so we can't give a price here. Please call seven zero three, six two seven, zero four four four to ask an advisor.",
+   "questions": [
+    "How much does life insurance cost per month?",
+    "how much is life insurance",
+    "life insurance price",
+    "cost of life insurance",
+    "life insurance rates",
+    "is life insurance expensive",
+    "monthly cost of life insurance",
+    "average life insurance cost",
+    "how much for a life policy",
+    "life insurance premium"
+   ]
+  },
+  {
+   "id": "life_no_exam",
+   "video": null,
+   "answer": "Some life insurance policies are available without a medical exam, though options and prices vary. Please call (703) 627-0444 to ask an advisor.",
+   "speech": "Some life insurance policies are available without a medical exam, though options and prices vary. Please call seven zero three, six two seven, zero four four four to ask an advisor.",
+   "questions": [
+    "Can I get life insurance without a medical exam?",
+    "no exam life insurance",
+    "life insurance without a physical",
+    "do i need a medical exam for life insurance",
+    "guaranteed issue life insurance",
+    "simplified issue life insurance",
+    "life insurance with no blood test",
+    "can i skip the medical exam",
+    "instant life insurance",
+    "life insurance no medical"
+   ]
+  },
+  {
+   "id": "life_preexisting",
+   "video": null,
+   "answer": "Often yes, though a health condition can affect the price or the type of policy available. Please call (703) 627-0444 to ask an advisor.",
+   "speech": "Often yes, though a health condition can affect the price or the type of policy available. Please call seven zero three, six two seven, zero four four four to ask an advisor.",
+   "questions": [
+    "Can I purchase life insurance if I have a pre-existing medical condition?",
+    "life insurance with health problems",
+    "can i get life insurance with diabetes",
+    "life insurance with a medical condition",
+    "can i get life insurance if i'm sick",
+    "life insurance for people with health issues",
+    "pre existing condition life insurance",
+    "life insurance after cancer",
+    "life insurance with high blood pressure",
+    "can i be denied life insurance"
+   ]
+  },
+  {
+   "id": "life_stop_paying",
+   "video": null,
+   "answer": "If you stop paying, a term policy usually lapses after a grace period. A whole life policy may use its cash value or offer other options. The details depend on your policy, so check with your insurer or an advisor.",
+   "speech": "If you stop paying, a term policy usually lapses after a grace period. A whole life policy may use its cash value or offer other options. The details depend on your policy, so check with your insurer or an advisor.",
+   "questions": [
+    "What happens to my life insurance if I stop paying premiums?",
+    "i stopped paying my life insurance",
+    "missed life insurance payment",
+    "life insurance lapse",
+    "can my life insurance be cancelled for nonpayment",
+    "grace period life insurance",
+    "what if i can't pay my life insurance",
+    "life policy lapsed",
+    "can i reinstate my life insurance",
+    "stop paying whole life policy"
+   ]
+  },
+  {
+   "id": "life_beneficiary",
+   "video": null,
+   "answer": "In most cases yes, the policy owner can change the beneficiary by contacting the insurance company and completing their form, unless the beneficiary is irrevocable.",
+   "speech": "In most cases yes, the policy owner can change the beneficiary by contacting the insurance company and completing their form, unless the beneficiary is irrevocable.",
+   "questions": [
+    "Can I change the beneficiary of my life insurance policy?",
+    "change my beneficiary",
+    "update life insurance beneficiary",
+    "how do i change who gets my life insurance",
+    "remove my ex as beneficiary",
+    "add a beneficiary",
+    "change beneficiary on my policy",
+    "who can be my beneficiary",
+    "beneficiary change form",
+    "update my beneficiaries"
+   ]
+  },
+  {
+   "id": "life_accidental",
+   "video": null,
+   "answer": "Most life insurance policies pay for death by accident as well as illness, subject to the policy's terms and exclusions. Accidental death coverage is also sold separately or as a rider.",
+   "speech": "Most life insurance policies pay for death by accident as well as illness, subject to the policy's terms and exclusions. Accidental death coverage is also sold separately or as a rider.",
+   "questions": [
+    "Does life insurance cover accidental death?",
+    "does life insurance pay for accidents",
+    "accidental death coverage",
+    "what is ad&d insurance",
+    "accidental death and dismemberment",
+    "is a car accident death covered by life insurance",
+    "accidental death rider",
+    "does life insurance cover all deaths",
+    "life insurance exclusions",
+    "accident life insurance"
+   ]
+  },
+  {
+   "id": "life_payout_time",
+   "video": null,
+   "answer": "Payouts usually follow once the insurer receives the claim form and death certificate; many are paid within a few weeks to two months, but it can take longer if the claim needs review.",
+   "speech": "Payouts usually follow once the insurer receives the claim form and death certificate; many are paid within a few weeks to two months, but it can take longer if the claim needs review.",
+   "questions": [
+    "How long does it take for beneficiaries to receive a life insurance payout?",
+    "how long does a life insurance payout take",
+    "when do beneficiaries get paid",
+    "life insurance claim time",
+    "how fast does life insurance pay",
+    "life insurance payout process",
+    "how to claim life insurance",
+    "life insurance death benefit timing",
+    "how long to get life insurance money",
+    "how do beneficiaries get paid"
+   ]
+  },
+  {
+   "id": "health_plans",
+   "video": null,
+   "answer": "Health insurance isn't one of our listed services. Please call (703) 627-0444 to ask whether an advisor can help, or you can compare plans at HealthCare.gov.",
+   "speech": "Health insurance isn't one of our listed services. Please call seven zero three, six two seven, zero four four four to ask whether an advisor can help, or you can compare plans at healthcare dot gov.",
+   "questions": [
+    "What health insurance plans do you offer?",
+    "do you offer health insurance",
+    "do you sell health insurance",
+    "health insurance",
+    "medical insurance",
+    "can i get health coverage here",
+    "do you have health plans",
+    "obamacare plans",
+    "medicare",
+    "affordable care act insurance"
+   ]
+  },
+  {
+   "id": "health_cost",
+   "video": null,
+   "answer": "Health insurance prices depend on the plan, your age, location, household and any subsidies, so we can't give a price here. Health insurance isn't on our listed services, so please call (703) 627-0444 to ask whether an advisor can help, or visit HealthCare.gov.",
+   "speech": "Health insurance prices depend on the plan, your age, location, household and any subsidies, so we can't give a price here. Health insurance isn't on our listed services, so please call seven zero three, six two seven, zero four four four to ask whether an advisor can help, or visit healthcare dot gov.",
+   "questions": [
+    "How much does health insurance cost per month?",
+    "how much is health insurance",
+    "health insurance price",
+    "cost of medical insurance",
+    "health insurance rates",
+    "monthly cost of health insurance",
+    "average health insurance cost",
+    "is health insurance expensive",
+    "how much for a family health plan",
+    "health plan premium"
+   ]
+  },
+  {
+   "id": "hmo_ppo",
+   "video": null,
+   "answer": "An HMO usually requires you to use its network and get referrals from a primary doctor, and often costs less. A PPO lets you see specialists and out-of-network providers with more flexibility, usually at a higher cost.",
+   "speech": "An HMO usually requires you to use its network and get referrals from a primary doctor, and often costs less. A PPO lets you see specialists and out-of-network providers with more flexibility, usually at a higher cost.",
+   "questions": [
+    "What is the difference between an HMO and a PPO?",
+    "hmo vs ppo",
+    "what is an hmo",
+    "what is a ppo",
+    "should i get hmo or ppo",
+    "difference between hmo and ppo",
+    "what does ppo mean",
+    "what does hmo mean",
+    "which is better hmo or ppo",
+    "explain hmo and ppo plans"
+   ]
+  },
+  {
+   "id": "health_visits",
+   "video": null,
+   "answer": "Most health plans cover doctor visits and hospital stays, though your copays, deductible and network rules apply. Check your plan's summary of benefits or call your insurer for details.",
+   "speech": "Most health plans cover doctor visits and hospital stays, though your copays, deductible and network rules apply. Check your plan's summary of benefits or call your insurer for details.",
+   "questions": [
+    "Does my health insurance cover doctor visits and hospital stays?",
+    "are doctor visits covered",
+    "is hospital covered",
+    "does health insurance pay for the hospital",
+    "doctor visit coverage",
+    "will my plan cover a hospital stay",
+    "is surgery covered by health insurance",
+    "what does health insurance cover",
+    "are checkups covered",
+    "inpatient coverage"
+   ]
+  },
+  {
+   "id": "health_preexisting",
+   "video": null,
+   "answer": "Under the Affordable Care Act, marketplace and most individual health plans can't deny you or charge more because of a pre-existing condition. Health insurance isn't on our listed services, so please call (703) 627-0444 to ask whether an advisor can help, or visit HealthCare.gov.",
+   "speech": "Under the Affordable Care Act, marketplace and most individual health plans can't deny you or charge more because of a pre-existing condition. Health insurance isn't on our listed services, so please call seven zero three, six two seven, zero four four four to ask whether an advisor can help, or visit healthcare dot gov.",
+   "questions": [
+    "Can I get health insurance if I have a pre-existing condition?",
+    "health insurance with a pre existing condition",
+    "can i be denied health insurance",
+    "health insurance with diabetes",
+    "will my condition affect health insurance",
+    "pre-existing conditions health plan",
+    "health coverage with a medical condition",
+    "can they refuse me health insurance",
+    "health insurance for sick people",
+    "aca pre existing conditions"
+   ]
+  },
+  {
+   "id": "health_rx",
+   "video": null,
+   "answer": "Most health plans include prescription coverage, but which drugs are covered and what you pay depend on the plan's drug list, called a formulary. Check with your plan for specific medications.",
+   "speech": "Most health plans include prescription coverage, but which drugs are covered and what you pay depend on the plan's drug list, called a formulary. Check with your plan for specific medications.",
+   "questions": [
+    "Does my health insurance cover prescription medications?",
+    "are prescriptions covered",
+    "prescription drug coverage",
+    "is my medication covered",
+    "health insurance drug coverage",
+    "what is a formulary",
+    "does insurance pay for medicine",
+    "pharmacy coverage",
+    "prescription costs with insurance",
+    "is my prescription covered by my plan"
+   ]
+  },
+  {
+   "id": "copay_deductible_oop",
+   "video": null,
+   "answer": "A copay is a fixed amount you pay for a service, like a doctor visit. The deductible is what you pay before the plan starts sharing costs. The out-of-pocket maximum is the most you'd pay in a year for covered care; after that the plan pays one hundred percent.",
+   "speech": "A copay is a fixed amount you pay for a service, like a doctor visit. The deductible is what you pay before the plan starts sharing costs. The out-of-pocket maximum is the most you'd pay in a year for covered care; after that the plan pays one hundred percent.",
+   "questions": [
+    "What is the difference between a copay, deductible, and out-of-pocket maximum?",
+    "what is a copay",
+    "what is an out of pocket maximum",
+    "copay vs deductible",
+    "what is coinsurance",
+    "explain copay and deductible",
+    "what does out of pocket max mean",
+    "health insurance terms explained",
+    "difference between copay and coinsurance",
+    "what is a health insurance deductible"
+   ]
+  },
+  {
+   "id": "health_add_family",
+   "video": null,
+   "answer": "Most health plans let you add a spouse and children, usually during open enrollment or after a qualifying life event like marriage or a birth. Check with your plan or HealthCare.gov for the rules.",
+   "speech": "Most health plans let you add a spouse and children, usually during open enrollment or after a qualifying life event like marriage or a birth. Check with your plan or healthcare dot gov for the rules.",
+   "questions": [
+    "Can I add my spouse or children to my health insurance plan?",
+    "add my wife to my health insurance",
+    "add my baby to health insurance",
+    "family health insurance",
+    "can my kids be on my health plan",
+    "add dependents to health insurance",
+    "can i add my husband to my health plan",
+    "health insurance for my family",
+    "how long can children stay on my health insurance",
+    "add a newborn to insurance"
+   ]
+  },
+  {
+   "id": "health_sep",
+   "video": null,
+   "answer": "Usually you can only enroll outside open enrollment if you have a qualifying life event, such as losing other coverage, moving, marriage or a new baby, which opens a special enrollment period.",
+   "speech": "Usually you can only enroll outside open enrollment if you have a qualifying life event, such as losing other coverage, moving, marriage or a new baby, which opens a special enrollment period.",
+   "questions": [
+    "Can I purchase health insurance outside the open enrollment period?",
+    "special enrollment period",
+    "can i get health insurance now",
+    "missed open enrollment",
+    "when is open enrollment",
+    "qualifying life event",
+    "can i buy health insurance anytime",
+    "health insurance after losing my job",
+    "late enrollment health insurance",
+    "enroll in health insurance mid year"
+   ]
+  },
+  {
+   "id": "health_emergency",
+   "video": null,
+   "answer": "Marketplace health plans must cover emergency services, and your cost sharing at an out-of-network emergency room generally can't be higher than in-network. Your deductible and copays still apply.",
+   "speech": "Marketplace health plans must cover emergency services, and your cost sharing at an out-of-network emergency room generally can't be higher than in-network. Your deductible and copays still apply.",
+   "questions": [
+    "Does my health insurance cover emergency medical services?",
+    "is the emergency room covered",
+    "er coverage",
+    "ambulance coverage",
+    "does insurance pay for emergencies",
+    "out of network emergency care",
+    "urgent care coverage",
+    "emergency room bill insurance",
+    "is an er visit covered",
+    "emergency medical coverage"
+   ]
+  },
+  {
+   "id": "business_needs",
+   "video": "service_business",
+   "answer": "Many businesses start with general liability, commercial property and workers' compensation if they have employees, then add commercial auto, professional liability or cyber as needed. An advisor can review your business. Call (703) 627-0444.",
+   "speech": "Many businesses start with general liability, commercial property and workers' compensation if they have employees, then add commercial auto, professional liability or cyber as needed. An advisor can review your business. Call seven zero three, six two seven, zero four four four.",
+   "questions": [
+    "What types of insurance does my business need?",
+    "what insurance does my business need",
+    "what coverage does a small business need",
+    "business insurance needs",
+    "i'm starting a business what insurance do i need",
+    "what insurance should my company have",
+    "small business insurance",
+    "which business policies do i need",
+    "business coverage options",
+    "insurance for a new business"
+   ]
+  },
+  {
+   "id": "gl_cost",
+   "video": null,
+   "answer": "General liability prices depend on your industry, size, revenue, location and claims history, so we can't give a price here. Call us at (703) 627-0444 for a business quote.",
+   "speech": "General liability prices depend on your industry, size, revenue, location and claims history, so we can't give a price here. Call us at seven zero three, six two seven, zero four four four for a business quote.",
+   "questions": [
+    "How much does general liability insurance cost for a small business?",
+    "how much is general liability insurance",
+    "general liability price",
+    "cost of business liability insurance",
+    "small business liability cost",
+    "general liability rates",
+    "how expensive is liability insurance for my business",
+    "commercial liability price",
+    "how much is business insurance",
+    "business insurance cost"
+   ]
+  },
+  {
+   "id": "cgl_covers",
+   "video": "service_commercial_liability",
+   "answer": "Commercial general liability helps protect a business against claims of bodily injury, property damage and some advertising injury caused by its operations, including legal defense costs, subject to the policy terms.",
+   "speech": "Commercial general liability helps protect a business against claims of bodily injury, property damage and some advertising injury caused by its operations, including legal defense costs, subject to the policy terms.",
+   "questions": [
+    "What does commercial general liability insurance cover?",
+    "what does general liability cover",
+    "what is commercial general liability",
+    "what is cgl insurance",
+    "what does business liability insurance cover",
+    "general liability coverage explained",
+    "slip and fall at my business",
+    "customer injury at my store",
+    "what is general liability insurance",
+    "do you offer general liability"
+   ]
+  },
+  {
+   "id": "bop_what",
+   "video": "service_bop",
+   "answer": "A Business Owner's Policy, or BOP, packages business property and general liability coverage together, often at a better price than buying them separately, for eligible small businesses.",
+   "speech": "A Business Owner's Policy, or BOP, packages business property and general liability coverage together, often at a better price than buying them separately, for eligible small businesses.",
+   "questions": [
+    "What is a Business Owner's Policy (BOP)?",
+    "what is a bop",
+    "business owners policy",
+    "do you offer a bop",
+    "what does a business owners policy cover",
+    "bop insurance",
+    "is a bop right for my business",
+    "property and liability package for business",
+    "what's included in a bop",
+    "small business package policy"
+   ]
+  },
+  {
+   "id": "wc_need",
+   "video": "service_workers_comp",
+   "answer": "In Virginia, most businesses with more than two part-time or full-time employees must carry workers' compensation, and it's wise even when not required. An advisor can confirm your requirement. Call (703) 627-0444.",
+   "speech": "In Virginia, most businesses with more than two part-time or full-time employees must carry workers' compensation, and it's wise even when not required. An advisor can confirm your requirement. Call seven zero three, six two seven, zero four four four.",
+   "questions": [
+    "Do I need workers' compensation insurance if I have employees?",
+    "do i need workers comp",
+    "is workers comp required",
+    "workers compensation requirements",
+    "how many employees before i need workers comp",
+    "workers comp in virginia",
+    "do you offer workers compensation",
+    "workers comp insurance",
+    "employee injury insurance",
+    "is workers comp mandatory"
+   ]
+  },
+  {
+   "id": "business_property",
+   "video": "service_commercial_property",
+   "answer": "Commercial property insurance helps protect your building, equipment, inventory and furniture from covered losses like fire, theft and some weather, subject to the policy terms.",
+   "speech": "Commercial property insurance helps protect your building, equipment, inventory and furniture from covered losses like fire, theft and some weather, subject to the policy terms.",
+   "questions": [
+    "Does commercial insurance cover damage to my business property?",
+    "is my business building covered",
+    "commercial property coverage",
+    "business equipment insurance",
+    "inventory insurance",
+    "my store was damaged",
+    "does business insurance cover my equipment",
+    "insurance for my business building",
+    "property damage at my business",
+    "commercial building damage"
+   ]
+  },
+  {
+   "id": "restaurant_retail",
+   "video": null,
+   "answer": "Restaurants, convenience stores and retail shops commonly need general liability, commercial property or a BOP, workers' compensation for employees, and sometimes liquor liability or commercial auto. Coverage depends on the business. Call (703) 627-0444.",
+   "speech": "Restaurants, convenience stores and retail shops commonly need general liability, commercial property or a BOP, workers' compensation for employees, and sometimes liquor liability or commercial auto. Coverage depends on the business. Call seven zero three, six two seven, zero four four four.",
+   "questions": [
+    "What insurance do I need for a restaurant, convenience store, or retail shop?",
+    "restaurant insurance",
+    "convenience store insurance",
+    "insurance for my retail store",
+    "gas station insurance",
+    "insurance for a shop",
+    "liquor liability insurance",
+    "what insurance does a restaurant need",
+    "insurance for my deli",
+    "store owner insurance"
+   ]
+  },
+  {
+   "id": "commercial_auto_need",
+   "video": "service_commercial_auto",
+   "answer": "If vehicles are owned by or mainly used for your business, you usually need commercial auto insurance, because personal auto policies often exclude business use. Call (703) 627-0444 and an advisor can review your vehicles.",
+   "speech": "If vehicles are owned by or mainly used for your business, you usually need commercial auto insurance, because personal auto policies often exclude business use. Call seven zero three, six two seven, zero four four four and an advisor can review your vehicles.",
+   "questions": [
+    "Do I need commercial auto insurance for business vehicles?",
+    "do i need commercial auto",
+    "insurance for my work truck",
+    "business vehicle insurance",
+    "does personal auto cover business use",
+    "insurance for my company van",
+    "do you offer commercial auto",
+    "delivery vehicle insurance",
+    "fleet insurance",
+    "insurance for business cars"
+   ]
+  },
+  {
+   "id": "professional_liability_who",
+   "video": "service_professional_liability",
+   "answer": "Professional liability, also called errors and omissions, helps protect businesses that give advice or services against claims of mistakes, negligence or failing to deliver. It's common for consultants, accountants, real estate and IT professionals.",
+   "speech": "Professional liability, also called errors and omissions, helps protect businesses that give advice or services against claims of mistakes, negligence or failing to deliver. It's common for consultants, accountants, real estate and IT professionals.",
+   "questions": [
+    "What is professional liability insurance, and who needs it?",
+    "what is professional liability",
+    "who needs professional liability insurance",
+    "do i need e and o insurance",
+    "professional liability for consultants",
+    "errors and omissions for my business",
+    "malpractice insurance for my firm",
+    "do you offer professional liability",
+    "professional liability coverage",
+    "insurance for professional mistakes"
+   ]
+  },
+  {
+   "id": "business_lawsuits",
+   "video": null,
+   "answer": "Business liability policies can help pay legal defense and settlements when a customer sues over a covered injury or damage, up to your limits. Some claims, like professional mistakes or employment disputes, need other coverage.",
+   "speech": "Business liability policies can help pay legal defense and settlements when a customer sues over a covered injury or damage, up to your limits. Some claims, like professional mistakes or employment disputes, need other coverage.",
+   "questions": [
+    "Does business insurance cover lawsuits filed by customers?",
+    "a customer is suing my business",
+    "does insurance pay for lawsuits",
+    "legal defense coverage",
+    "am i covered if i get sued",
+    "lawsuit protection for business",
+    "will insurance pay my lawyer",
+    "business sued for injury",
+    "customer lawsuit coverage",
+    "does liability insurance cover legal fees"
+   ]
+  },
+  {
+   "id": "file_claim",
+   "video": "claims",
+   "answer": "We can help with claims. Please call (703) 627-0444, and an advisor will guide you. You can also report the claim directly to your insurance company's claims line.",
+   "speech": "We can help with claims. Please call seven zero three, six two seven, zero four four four, and an advisor will guide you. You can also report the claim directly to your insurance company's claims line.",
+   "questions": [
+    "How do I file an insurance claim?",
+    "i need to file a claim",
+    "how do i make a claim",
+    "report a claim",
+    "start a claim",
+    "file a claim",
+    "i want to file an insurance claim",
+    "how to submit a claim",
+    "claims help",
+    "open a claim"
+   ]
+  },
+  {
+   "id": "claim_documents",
+   "video": null,
+   "answer": "Usually you'll need your policy number, the date and details of what happened, photos of the damage, a police or incident report if there is one, repair estimates and receipts. Your insurer will tell you exactly what they need.",
+   "speech": "Usually you'll need your policy number, the date and details of what happened, photos of the damage, a police or incident report if there is one, repair estimates and receipts. Your insurer will tell you exactly what they need.",
+   "questions": [
+    "What documents do I need to submit an insurance claim?",
+    "what do i need to file a claim",
+    "documents for an insurance claim",
+    "what information for a claim",
+    "what proof do i need for a claim",
+    "claim paperwork",
+    "do i need photos for my claim",
+    "do i need a police report",
+    "what should i send the adjuster",
+    "claim requirements"
+   ]
+  },
+  {
+   "id": "claim_time",
+   "video": null,
+   "answer": "Simple claims may be settled in days or a few weeks, while complex ones can take longer. Virginia has rules requiring insurers to act promptly, but timing depends on the claim and the insurance company.",
+   "speech": "Simple claims may be settled in days or a few weeks, while complex ones can take longer. Virginia has rules requiring insurers to act promptly, but timing depends on the claim and the insurance company.",
+   "questions": [
+    "How long does it take for an insurance claim to be processed?",
+    "how long does a claim take",
+    "when will my claim be paid",
+    "claim processing time",
+    "how fast are claims settled",
+    "my claim is taking too long",
+    "how long until i get my claim money",
+    "claim settlement time",
+    "how long for an adjuster",
+    "average claim time"
+   ]
+  },
+  {
+   "id": "claim_premium",
+   "video": null,
+   "answer": "It can. At-fault or frequent claims may raise your premium at renewal, while some claims, like not-at-fault accidents, may not. It depends on the insurance company and the claim.",
+   "speech": "It can. At-fault or frequent claims may raise your premium at renewal, while some claims, like not-at-fault accidents, may not. It depends on the insurance company and the claim.",
+   "questions": [
+    "Will filing a claim increase my insurance premium?",
+    "will my rates go up if i file a claim",
+    "does filing a claim raise insurance",
+    "should i file a small claim",
+    "claim and premium increase",
+    "does a claim affect my rate",
+    "will my home insurance go up after a claim",
+    "not at fault claim premium",
+    "is it worth filing a claim",
+    "does making a claim cost more"
+   ]
+  },
+  {
+   "id": "after_accident",
+   "video": null,
+   "answer": "First make sure everyone is safe and call 911 if anyone is hurt. Move to safety if you can, exchange information with the other driver, take photos, get a police report, and report the accident to your insurance company. You can also call us at (703) 627-0444.",
+   "speech": "First make sure everyone is safe and call nine one one if anyone is hurt. Move to safety if you can, exchange information with the other driver, take photos, get a police report, and report the accident to your insurance company. You can also call us at seven zero three, six two seven, zero four four four.",
+   "questions": [
+    "What should I do immediately after a car accident?",
+    "i just had a car accident",
+    "i was in an accident what do i do",
+    "car crash what to do",
+    "steps after a car accident",
+    "what to do after a fender bender",
+    "i got hit what now",
+    "accident checklist",
+    "someone hit my car",
+    "what should i do after a crash"
+   ]
+  },
+  {
+   "id": "claim_denied",
+   "video": null,
+   "answer": "If a claim is denied, ask the insurance company for the reason in writing and review your policy. You can provide more information, request a review or appeal, and an advisor can help you understand your options. Call (703) 627-0444.",
+   "speech": "If a claim is denied, ask the insurance company for the reason in writing and review your policy. You can provide more information, request a review or appeal, and an advisor can help you understand your options. Call seven zero three, six two seven, zero four four four.",
+   "questions": [
+    "What happens if my insurance claim is denied?",
+    "my claim was denied",
+    "insurance denied my claim",
+    "why was my claim rejected",
+    "claim rejected what now",
+    "denied claim help",
+    "insurance won't pay my claim",
+    "what to do when a claim is denied",
+    "my insurer refused to pay",
+    "claim denial"
+   ]
+  },
+  {
+   "id": "claim_appeal",
+   "video": null,
+   "answer": "Yes. You can ask your insurer for a review or appeal with additional evidence, and if you still disagree you may contact the Virginia Bureau of Insurance. An advisor can help guide you. Call (703) 627-0444.",
+   "speech": "Yes. You can ask your insurer for a review or appeal with additional evidence, and if you still disagree you may contact the Virginia Bureau of Insurance. An advisor can help guide you. Call seven zero three, six two seven, zero four four four.",
+   "questions": [
+    "Can I appeal a denied insurance claim?",
+    "appeal a claim denial",
+    "how to dispute a claim",
+    "can i fight a denied claim",
+    "complain about my insurance company",
+    "virginia bureau of insurance complaint",
+    "how to challenge a claim decision",
+    "dispute insurance decision",
+    "insurance appeal process",
+    "contest a denied claim"
+   ]
+  },
+  {
+   "id": "claim_status",
+   "video": null,
+   "answer": "Claim status comes from the insurance company, usually through its app, website or your adjuster, using your claim number. I can't look up claims, but an advisor can help you follow up. Call (703) 627-0444.",
+   "speech": "Claim status comes from the insurance company, usually through its app, website or your adjuster, using your claim number. I can't look up claims, but an advisor can help you follow up. Call seven zero three, six two seven, zero four four four.",
+   "questions": [
+    "How can I check the status of my insurance claim?",
+    "what is the status of my claim",
+    "check my claim",
+    "where is my claim",
+    "claim update",
+    "has my claim been approved",
+    "track my claim",
+    "my claim number",
+    "who is my adjuster",
+    "follow up on my claim"
+   ]
+  },
+  {
+   "id": "deductible_before",
+   "video": null,
+   "answer": "Usually the deductible is subtracted from your claim payment rather than paid upfront. For example, the insurer pays the covered amount minus your deductible. Some policies, like health plans, work differently.",
+   "speech": "Usually the deductible is subtracted from your claim payment rather than paid upfront. For example, the insurer pays the covered amount minus your deductible. Some policies, like health plans, work differently.",
+   "questions": [
+    "Do I need to pay my deductible before insurance covers a claim?",
+    "when do i pay my deductible",
+    "do i pay the deductible first",
+    "how is the deductible paid",
+    "deductible on a claim",
+    "who do i pay the deductible to",
+    "is the deductible taken out of my claim",
+    "do i have to pay deductible upfront",
+    "deductible payment",
+    "claim deductible"
+   ]
+  },
+  {
+   "id": "choose_repair_shop",
+   "video": null,
+   "answer": "In most cases yes, you can choose your own repair shop or contractor, though the insurer may recommend preferred shops. Virginia law also protects your right to choose an auto repair shop.",
+   "speech": "In most cases yes, you can choose your own repair shop or contractor, though the insurer may recommend preferred shops. Virginia law also protects your right to choose an auto repair shop.",
+   "questions": [
+    "Can I choose my own repair shop or contractor after an insured loss?",
+    "can i pick my own body shop",
+    "do i have to use the insurance company's repair shop",
+    "choose my own contractor",
+    "can i use my mechanic",
+    "preferred repair shop",
+    "who fixes my car after a claim",
+    "can i get my own estimate",
+    "pick my own roofer",
+    "choose a repair shop"
+   ]
+  },
+  {
+   "id": "pay_monthly",
+   "video": null,
+   "answer": "Most insurance companies offer monthly payments as well as paying in full, though paying in full sometimes costs a little less. Options depend on the carrier. Please call us at (703) 627-0444 and an advisor can help.",
+   "speech": "Most insurance companies offer monthly payments as well as paying in full, though paying in full sometimes costs a little less. Options depend on the carrier. Please call us at seven zero three, six two seven, zero four four four and an advisor can help.",
+   "questions": [
+    "Can I pay my insurance premium monthly instead of annually?",
+    "can i pay monthly",
+    "monthly payment plan",
+    "do i have to pay all at once",
+    "payment options",
+    "can i pay every month",
+    "installment payments insurance",
+    "pay in full vs monthly",
+    "how can i pay my premium",
+    "do you offer payment plans"
+   ]
+  },
+  {
+   "id": "missed_payment",
+   "video": null,
+   "answer": "If you miss a payment, the insurer usually sends a notice and gives a short grace period. If it isn't paid, the policy can be cancelled, leaving you without coverage, so contact your insurer or an advisor right away. Call (703) 627-0444.",
+   "speech": "If you miss a payment, the insurer usually sends a notice and gives a short grace period. If it isn't paid, the policy can be cancelled, leaving you without coverage, so contact your insurer or an advisor right away. Call seven zero three, six two seven, zero four four four.",
+   "questions": [
+    "What happens if I miss an insurance payment?",
+    "i missed my payment",
+    "late insurance payment",
+    "will my policy be cancelled if i'm late",
+    "grace period insurance",
+    "i forgot to pay my insurance",
+    "my policy was cancelled for nonpayment",
+    "can i still pay after the due date",
+    "overdue premium",
+    "missed premium"
+   ]
+  },
+  {
+   "id": "autopay",
+   "video": null,
+   "answer": "Most insurance companies let you set up automatic payments from a bank account or card, and some give a discount for it. An advisor can help you set it up with your carrier. Call (703) 627-0444.",
+   "speech": "Most insurance companies let you set up automatic payments from a bank account or card, and some give a discount for it. An advisor can help you set it up with your carrier. Call seven zero three, six two seven, zero four four four.",
+   "questions": [
+    "Can I set up automatic payments for my insurance?",
+    "autopay",
+    "automatic payments",
+    "can i set up auto pay",
+    "eft payments",
+    "pay automatically from my bank",
+    "recurring payments insurance",
+    "paperless and autopay discount",
+    "set up automatic billing",
+    "auto draft"
+   ]
+  },
+  {
+   "id": "bundle_discount",
+   "video": null,
+   "answer": "Many of the carriers we work with offer multi-policy discounts for bundling, such as home and auto. Discounts aren't guaranteed and vary by carrier. Call (703) 627-0444 and an advisor can check.",
+   "speech": "Many of the carriers we work with offer multi-policy discounts for bundling, such as home and auto. Discounts aren't guaranteed and vary by carrier. Call seven zero three, six two seven, zero four four four and an advisor can check.",
+   "questions": [
+    "Do you offer discounts for bundling multiple insurance policies?",
+    "bundling discount",
+    "multi-policy discount",
+    "discount for more than one policy",
+    "do i save if i bundle",
+    "bundle savings",
+    "discount for home and auto together",
+    "package discount",
+    "multi line discount",
+    "do you give bundle discounts"
+   ]
+  },
+  {
+   "id": "good_driver_discount",
+   "video": null,
+   "answer": "Many insurance companies offer safe or good driver discounts, and some offer savings for defensive driving courses or driving apps. Discounts vary by carrier. Call (703) 627-0444 and an advisor can check.",
+   "speech": "Many insurance companies offer safe or good driver discounts, and some offer savings for defensive driving courses or driving apps. Discounts vary by carrier. Call seven zero three, six two seven, zero four four four and an advisor can check.",
+   "questions": [
+    "Can I get a discount for having a good driving record?",
+    "good driver discount",
+    "safe driver discount",
+    "discount for no accidents",
+    "what car insurance discounts are there",
+    "defensive driving discount",
+    "do you have discounts",
+    "student discount car insurance",
+    "telematics discount",
+    "how can i get car insurance discounts"
+   ]
+  },
+  {
+   "id": "premium_increase",
+   "video": null,
+   "answer": "Premiums can rise because of claims or tickets, changes to your coverage, vehicles or home, or because repair, medical and rebuilding costs have risen overall. An advisor can review your policy and compare options. Call (703) 627-0444.",
+   "speech": "Premiums can rise because of claims or tickets, changes to your coverage, vehicles or home, or because repair, medical and rebuilding costs have risen overall. An advisor can review your policy and compare options. Call seven zero three, six two seven, zero four four four.",
+   "questions": [
+    "Why did my insurance premium increase this year?",
+    "why did my insurance go up",
+    "my rate increased",
+    "my premium went up for no reason",
+    "why is my renewal higher",
+    "insurance price increase",
+    "why is my bill higher",
+    "my insurance got more expensive",
+    "renewal increase",
+    "why are insurance rates rising"
+   ]
+  },
+  {
+   "id": "change_coverage",
+   "video": null,
+   "answer": "Yes, most policies can be changed during the term, like adding a car, raising limits or changing a deductible, and your premium is adjusted. Call (703) 627-0444 and an advisor can help.",
+   "speech": "Yes, most policies can be changed during the term, like adding a car, raising limits or changing a deductible, and your premium is adjusted. Call seven zero three, six two seven, zero four four four and an advisor can help.",
+   "questions": [
+    "Can I change my coverage in the middle of my policy term?",
+    "can i change my policy",
+    "update my coverage",
+    "add a car to my policy",
+    "remove a car from my policy",
+    "raise my limits",
+    "change my deductible",
+    "make changes to my policy",
+    "can i lower my coverage",
+    "endorsement to my policy"
+   ]
+  },
+  {
+   "id": "renew",
+   "video": null,
+   "answer": "Most policies renew automatically if you keep paying, and you'll get a renewal notice before the end date. It's a good time to review your coverage and compare options. Call (703) 627-0444 for a review.",
+   "speech": "Most policies renew automatically if you keep paying, and you'll get a renewal notice before the end date. It's a good time to review your coverage and compare options. Call seven zero three, six two seven, zero four four four for a review.",
+   "questions": [
+    "How do I renew my insurance policy?",
+    "renew my policy",
+    "when does my policy renew",
+    "is renewal automatic",
+    "policy renewal",
+    "my policy is expiring",
+    "renewal notice",
+    "how do i keep my insurance active",
+    "renew my car insurance",
+    "renew my home insurance"
+   ]
+  },
+  {
+   "id": "cancel",
+   "video": null,
+   "answer": "You can usually cancel a policy at any time by contacting the insurance company or your agent, but make sure new coverage starts first so you're never uninsured, especially for car insurance or a mortgaged home. Call (703) 627-0444.",
+   "speech": "You can usually cancel a policy at any time by contacting the insurance company or your agent, but make sure new coverage starts first so you're never uninsured, especially for car insurance or a mortgaged home. Call seven zero three, six two seven, zero four four four.",
+   "questions": [
+    "Can I cancel my insurance policy at any time?",
+    "cancel my policy",
+    "how do i cancel my insurance",
+    "i want to cancel",
+    "can i cancel early",
+    "stop my insurance",
+    "end my policy",
+    "cancel car insurance",
+    "cancel home insurance",
+    "cancellation"
+   ]
+  },
+  {
+   "id": "cancel_refund",
+   "video": null,
+   "answer": "If you paid ahead, you usually get a refund of the unused premium when you cancel, though some insurers keep a small fee. It depends on the carrier and policy.",
+   "speech": "If you paid ahead, you usually get a refund of the unused premium when you cancel, though some insurers keep a small fee. It depends on the carrier and policy.",
+   "questions": [
+    "Will I receive a refund if I cancel my insurance policy early?",
+    "refund if i cancel",
+    "do i get money back if i cancel",
+    "unearned premium refund",
+    "cancellation refund",
+    "prorated refund",
+    "cancellation fee",
+    "refund for unused premium",
+    "will i get my money back",
+    "short rate cancellation"
+   ]
+  },
+  {
+   "id": "compare_quotes",
+   "video": "carriers",
+   "answer": "Yes. As an independent agency, we compare options from multiple insurance companies to help you find a good fit. Call (703) 627-0444 to get started.",
+   "speech": "Yes. As an independent agency, we compare options from multiple insurance companies to help you find a good fit. Call seven zero three, six two seven, zero four four four to get started.",
+   "questions": [
+    "Can you compare insurance quotes from different companies?",
+    "do you compare quotes",
+    "can you shop around for me",
+    "compare insurance companies",
+    "get quotes from several companies",
+    "are you an independent agent",
+    "do you work with many insurance companies",
+    "can you find me the best price",
+    "shop my insurance",
+    "compare rates"
+   ]
+  },
+  {
+   "id": "quote_info",
+   "video": null,
+   "answer": "For most quotes we need your name, contact details and ZIP code, plus details about what you want to insure, like vehicles and drivers, your home, or your business. Please don't share sensitive numbers here; an advisor will collect what's needed securely.",
+   "speech": "For most quotes we need your name, contact details and ZIP code, plus details about what you want to insure, like vehicles and drivers, your home, or your business. Please don't share sensitive numbers here; an advisor will collect what's needed securely.",
+   "questions": [
+    "What information do you need to provide an insurance quote?",
+    "what do you need for a quote",
+    "what information for a car insurance quote",
+    "what do i need to get a quote",
+    "quote requirements",
+    "what details do you need from me",
+    "what documents for a quote",
+    "information needed for home insurance quote",
+    "what to prepare for a quote",
+    "what info for a business quote"
+   ]
+  },
+  {
+   "id": "how_fast_coverage",
+   "video": null,
+   "answer": "Coverage can often start soon after an application is approved and the first payment is made, sometimes the same day, but the start date is set by the insurance company. Call (703) 627-0444 to get started.",
+   "speech": "Coverage can often start soon after an application is approved and the first payment is made, sometimes the same day, but the start date is set by the insurance company. Call seven zero three, six two seven, zero four four four to get started.",
+   "questions": [
+    "How quickly can I get insurance coverage?",
+    "how fast can i get insured",
+    "when does coverage start",
+    "how soon can my policy start",
+    "i need insurance quickly",
+    "how long to get insurance",
+    "start coverage fast",
+    "how quick can you insure me",
+    "when will i be covered",
+    "effective date of coverage"
+   ]
+  },
+  {
+   "id": "same_day",
+   "video": null,
+   "answer": "Same-day coverage is often possible for many policies once you're approved and make the first payment, but it depends on the carrier and the policy. Call (703) 627-0444 as early in the day as you can.",
+   "speech": "Same-day coverage is often possible for many policies once you're approved and make the first payment, but it depends on the carrier and the policy. Call seven zero three, six two seven, zero four four four as early in the day as you can.",
+   "questions": [
+    "Can I get insurance on the same day?",
+    "same day insurance",
+    "i need insurance today",
+    "can i get covered today",
+    "insurance right now",
+    "instant insurance",
+    "can i drive off the lot today with insurance",
+    "same day coverage",
+    "immediate insurance",
+    "insurance today please"
+   ]
+  },
+  {
+   "id": "visit_office",
+   "video": null,
+   "answer": "No, you don't have to visit. You can work with us by phone at (703) 627-0444, by email, or through the quote form on our website. You're also welcome at our office at 14484 General Washington Drive in Woodbridge.",
+   "speech": "No, you don't have to visit. You can work with us by phone at seven zero three, six two seven, zero four four four, by email, or through the quote form on our website. You're also welcome at our office at 14484 General Washington Drive in Woodbridge.",
+   "questions": [
+    "Do I need to visit your office to purchase insurance?",
+    "do i have to come in person",
+    "can i do this remotely",
+    "do i need an appointment at the office",
+    "can i buy insurance without visiting",
+    "do i need to come to your office",
+    "can everything be done by phone",
+    "is it all online",
+    "do i need to meet in person",
+    "can i visit your office"
+   ]
+  },
+  {
+   "id": "phone_online",
+   "video": null,
+   "answer": "Yes. You can start by phone at (703) 627-0444, by email at saha agency 2017 at gmail dot com, or with the quote form on sahaagency.com, and an advisor will help you complete it.",
+   "speech": "Yes. You can start by phone at seven zero three, six two seven, zero four four four, by email at saha agency 2017 at gmail dot com, or with the quote form on saha agency dot com, and an advisor will help you complete it.",
+   "questions": [
+    "Can I buy insurance over the phone or online?",
+    "can i buy insurance online",
+    "can i buy insurance by phone",
+    "online insurance purchase",
+    "can i get insured over the phone",
+    "buy a policy online",
+    "can i apply online",
+    "online application",
+    "can i do it by email",
+    "get insurance online"
+   ]
+  },
+  {
+   "id": "speak_agent",
+   "video": "phone",
+   "answer": "You can reach an advisor by calling (703) 627-0444. Advisor consultations are available Monday through Friday.",
+   "speech": "You can reach an advisor by calling seven zero three, six two seven, zero four four four. Advisor consultations are available Monday through Friday.",
+   "questions": [
+    "How can I speak directly with a licensed insurance agent?",
+    "i want to talk to an agent",
+    "speak to a person",
+    "talk to a human",
+    "can i talk to someone",
+    "connect me to an agent",
+    "real person please",
+    "speak with an advisor",
+    "i need to talk to an insurance agent",
+    "agent please"
+   ]
+  },
+  {
+   "id": "switch_provider",
+   "video": null,
+   "answer": "Yes, we can help you compare options and switch. Start the new policy first, then cancel the old one so there's no gap in coverage. Call (703) 627-0444 to get started.",
+   "speech": "Yes, we can help you compare options and switch. Start the new policy first, then cancel the old one so there's no gap in coverage. Call seven zero three, six two seven, zero four four four to get started.",
+   "questions": [
+    "Can you help me switch from my current insurance provider?",
+    "i want to switch insurance",
+    "change insurance companies",
+    "switch my car insurance",
+    "move my policy to you",
+    "transfer my insurance",
+    "leave my current insurer",
+    "how do i switch carriers",
+    "switch my home insurance",
+    "can i change my insurance company"
+   ]
+  },
+  {
+   "id": "proof_of_insurance",
+   "video": null,
+   "answer": "You can usually get your policy documents or insurance ID card from your insurance company's app or website, or we can help you request them. Call (703) 627-0444.",
+   "speech": "You can usually get your policy documents or insurance ID card from your insurance company's app or website, or we can help you request them. Call seven zero three, six two seven, zero four four four.",
+   "questions": [
+    "How do I get a copy of my insurance policy or proof of insurance?",
+    "proof of insurance",
+    "insurance card",
+    "i need my id card",
+    "copy of my policy",
+    "declarations page",
+    "certificate of insurance",
+    "where are my policy documents",
+    "i lost my insurance card",
+    "evidence of insurance"
+   ]
+  },
+  {
+   "id": "after_hours",
+   "video": null,
+   "answer": "If anyone is in danger, call 911 first. For urgent claims after hours, call your insurance company's 24-hour claims line, which is usually on your ID card or app. You can also leave a message at (703) 627-0444 and an advisor will follow up.",
+   "speech": "If anyone is in danger, call nine one one first. For urgent claims after hours, call your insurance company's 24-hour claims line, which is usually on your ID card or app. You can also leave a message at seven zero three, six two seven, zero four four four and an advisor will follow up.",
+   "questions": [
+    "What should I do if I need emergency insurance assistance outside business hours?",
+    "after hours help",
+    "emergency insurance help at night",
+    "who do i call on the weekend",
+    "24 hour claims",
+    "urgent claim after hours",
+    "emergency claim number",
+    "insurance emergency",
+    "you are closed and i need help",
+    "weekend emergency insurance"
+   ]
+  }
+ ]
+}

@@ -5,9 +5,12 @@ POST /api/tts   text -> Kokoro voice (MP3) for live answers
 """
 
 import asyncio
+import hashlib
 import json
 import logging
 import os
+import time
+from pathlib import Path
 from contextlib import asynccontextmanager
 
 import httpx
@@ -16,7 +19,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import Response
 from pydantic import BaseModel, Field
 
-from app import library, website
+from app import faq, library, website
 from app.knowledge import load_knowledge, load_system_prompt
 
 logging.basicConfig(level=logging.INFO)
@@ -27,16 +30,19 @@ KOKORO_URL = os.getenv("KOKORO_URL", "http://host.docker.internal:8880").rstrip(
 OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "qwen3:8b")
 VOICE = os.getenv("KOKORO_VOICE", "af_heart")
 VOICE_SPEED = float(os.getenv("KOKORO_SPEED", "1.0"))
+TTS_CACHE = Path(os.getenv("TTS_CACHE_DIR", "/app/cache/tts"))
 
 
 @asynccontextmanager
 async def lifespan(_app):
-    task = asyncio.create_task(website.refresh_forever())  # keep the website copy fresh
+    tasks = [asyncio.create_task(website.refresh_forever()),   # keep the website copy fresh
+             asyncio.create_task(warm_voice_cache())]           # pre-record prepared answers
     yield
-    task.cancel()
+    for task in tasks:
+        task.cancel()
 
 
-app = FastAPI(title="Saha Agency AI Virtual Concierge", version="3.1.0", lifespan=lifespan)
+app = FastAPI(title="Saha Agency AI Virtual Concierge", version="3.2.0", lifespan=lifespan)
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_credentials=False,
                    allow_methods=["*"], allow_headers=["*"])
 
@@ -65,9 +71,10 @@ def health():
     except (OSError, ValueError, KeyError, TypeError) as error:
         raise HTTPException(500, "Check the files in the data folder.") from error
     site = website.status()
+    cached = len(list(TTS_CACHE.glob("*.mp3"))) if TTS_CACHE.exists() else 0
     return {"status": "healthy", "knowledge": name, "ollama_model": OLLAMA_MODEL, "voice": VOICE,
-            "premade_answers": answers, "website_pages": len(site["pages"]),
-            "website_updated": site["updated"]}
+            "premade_answers": answers, **faq.stats(), "voice_cache": cached,
+            "website_pages": len(site["pages"]), "website_updated": site["updated"]}
 
 
 @app.get("/api/website/status")
@@ -133,18 +140,38 @@ async def generate_answer(message):
     return answer.strip()
 
 
+def library_reply(entry, how):
+    return {"source": "library", "id": entry["id"], "answer": entry["text"], "how": how,
+            "speech": entry.get("speech", entry["text"]), "videos": entry.get("videos", [])}
+
+
 @app.post("/api/ask")
 async def ask(request: AskRequest):
-    """Premade answer if one fits (the screen plays its video), otherwise a live answer."""
+    """1. exact premade question  2. instant match (video or FAQ answer)  3. live AI answer."""
     question = request.message.strip()
-    entry = await library.match(question, OLLAMA_URL, OLLAMA_MODEL)
+    started = time.perf_counter()
+    try:
+        entry = library.quick_match(question, library.load_library())
+    except (OSError, ValueError):
+        entry = None
     if entry:
-        log.info("Premade answer: %s  <-  %r", entry["id"], question)
-        return {"source": "library", "id": entry["id"], "answer": entry["text"],
-                "speech": entry.get("speech", entry["text"]), "videos": entry.get("videos", [])}
+        log.info("Premade (exact): %s  <-  %r", entry["id"], question)
+        return library_reply(entry, "exact")
+
+    found, score, how = await faq.find(question, OLLAMA_URL, OLLAMA_MODEL)
+    ms = (time.perf_counter() - started) * 1000
+    if found and found["kind"] == "library":
+        log.info("Premade (%s %.2f, %.0f ms): %s  <-  %r", how, score, ms, found["entry"]["id"], question)
+        return library_reply(found["entry"], how)
+    if found:
+        e = found["entry"]
+        log.info("FAQ (%s %.2f, %.0f ms): %s  <-  %r", how, score, ms, e["id"], question)
+        return {"source": "faq", "id": e["id"], "answer": e["answer"], "speech": e.get("speech", e["answer"]),
+                "videos": [], "how": how}
+
     answer = await generate_answer(question)
-    log.info("Live answer  <-  %r", question)
-    return {"source": "live", "answer": answer, "speech": answer, "videos": []}
+    log.info("Live answer (best match %.2f)  <-  %r", score, question)
+    return {"source": "live", "answer": answer, "speech": answer, "videos": [], "how": "live"}
 
 
 @app.post("/api/chat")
@@ -154,20 +181,63 @@ async def chat(request: AskRequest):
     return {"answer": answer, "model": OLLAMA_MODEL}
 
 
+def _tts_path(text: str) -> Path:
+    key = hashlib.sha1(f"{VOICE}|{VOICE_SPEED}|{text.strip()}".encode("utf-8")).hexdigest()
+    return TTS_CACHE / f"{key}.mp3"
+
+
+async def synthesize(text: str) -> bytes:
+    """Kokoro voice, cached on disk so repeated answers play instantly."""
+    path = _tts_path(text)
+    if path.exists():
+        return path.read_bytes()
+    payload = {"model": "kokoro", "input": text.strip(), "voice": VOICE,
+               "response_format": "mp3", "speed": VOICE_SPEED}
+    async with httpx.AsyncClient(timeout=120.0) as client:
+        result = await client.post(f"{KOKORO_URL}/v1/audio/speech", json=payload)
+        result.raise_for_status()
+    if not result.content:
+        raise ValueError("empty audio")
+    try:
+        TTS_CACHE.mkdir(parents=True, exist_ok=True)
+        tmp = path.with_suffix(".part")
+        tmp.write_bytes(result.content)
+        tmp.replace(path)
+    except OSError as error:
+        log.warning("Could not cache voice: %s", error)
+    return result.content
+
+
+async def warm_voice_cache():
+    """Record every prepared answer once, in the background, so they speak instantly."""
+    await asyncio.sleep(10)
+    while True:
+        try:
+            texts = [t for t in faq.all_speech() if not _tts_path(t).exists()]
+            for i, text in enumerate(texts, 1):
+                await synthesize(text)
+                if i % 20 == 0:
+                    log.info("Voice cache: %d/%d recorded", i, len(texts))
+            if texts:
+                log.info("Voice cache ready (%d new answers recorded).", len(texts))
+            await asyncio.sleep(3600)
+        except asyncio.CancelledError:
+            raise
+        except Exception as error:  # Kokoro not up yet: try again later
+            log.info("Voice cache waiting for Kokoro (%s)", error)
+            await asyncio.sleep(60)
+
+
 @app.post("/api/tts", responses={200: {"content": {"audio/mpeg": {}}}})
 async def text_to_speech(request: TTSRequest):
-    payload = {"model": "kokoro", "input": request.text.strip(), "voice": VOICE,
-               "response_format": "mp3", "speed": VOICE_SPEED}
     try:
-        async with httpx.AsyncClient(timeout=120.0) as client:
-            result = await client.post(f"{KOKORO_URL}/v1/audio/speech", json=payload)
-            result.raise_for_status()
-        if not result.content:
-            raise HTTPException(502, "Kokoro returned empty audio.")
+        audio = await synthesize(request.text)
     except httpx.TimeoutException as error:
         raise HTTPException(504, "Kokoro took too long.") from error
     except httpx.HTTPStatusError as error:
         raise HTTPException(502, f"Kokoro returned HTTP {error.response.status_code}.") from error
     except httpx.RequestError as error:
         raise HTTPException(503, "Could not connect to Kokoro TTS.") from error
-    return Response(content=result.content, media_type="audio/mpeg")
+    except ValueError as error:
+        raise HTTPException(502, "Kokoro returned empty audio.") from error
+    return Response(content=audio, media_type="audio/mpeg")
