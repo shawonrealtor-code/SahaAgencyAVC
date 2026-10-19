@@ -53,6 +53,19 @@ powershell -ExecutionPolicy Bypass -File .\START.ps1
 Chrome opens the concierge at http://localhost:5173 — press **F11** for full screen and tap the screen once
 (browsers need one tap before they play sound).
 
+## Using it on phones, tablets or another screen
+
+The screen forwards `/api` and `/health` to the backend on the PC (`avatar-frontend/vite.config.js`),
+so any device that can open the page also gets answers — the backend itself stays private on the PC.
+
+- **Same Wi-Fi:** open the "Other devices" address that `START.ps1` prints, e.g. `http://192.168.1.20:5173`.
+  (Allow Node.js through Windows Firewall the first time.)
+- **Over the internet / custom domain:** point a tunnel (e.g. Cloudflare Tunnel) at `http://localhost:5173`.
+  Use **https** — phones only allow the microphone on secure pages.
+- **iPhone / iPad:** tap the screen once before asking, so Safari allows her voice and video sound.
+  Voice input needs Siri & Dictation enabled; otherwise use the keyboard button.
+- Note: everyone who can open the address can use the concierge.
+
 ## Project layout
 
 ```

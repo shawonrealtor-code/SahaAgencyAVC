@@ -95,13 +95,21 @@ function flashStatus(text, ms = 3500) {
 
 /* ---------- audio unlock (browsers need one tap first) ---------- */
 
+// A tiny silent sound, played once from a tap, unlocks the voice on iPhone/iPad.
+const SILENCE = 'data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA=';
 let audioUnlocked = false;
 function unlockAudio() {
+  avatar.unlockSound();
   if (audioUnlocked) return;
   audioUnlocked = true;
+  if (!audio.src) {
+    audio.src = SILENCE;
+    audio.play().then(() => audio.pause()).catch(() => { audioUnlocked = false; });
+  }
 }
-document.addEventListener('pointerdown', unlockAudio, { capture: true });
-document.addEventListener('keydown', unlockAudio, { capture: true });
+for (const type of ['pointerdown', 'touchend', 'click', 'keydown']) {
+  document.addEventListener(type, unlockAudio, { capture: true });
+}
 
 /* ---------- actions ---------- */
 

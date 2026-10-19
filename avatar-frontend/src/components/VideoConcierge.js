@@ -78,6 +78,26 @@ export class VideoConcierge {
     return this.blobUrls[url] !== null;
   }
 
+  // iPhone / iPad (Safari): a video may only play WITH sound if that element was
+  // started by a tap once. Call this from a tap so later answers can play sound.
+  unlockSound() {
+    if (this.soundUnlocked) return;
+    this.soundUnlocked = true;
+    const fallback = this.blobUrls[CLIPS.idle] || CLIPS.idle;
+    for (const video of this.layers) {
+      if (!video.src) video.src = fallback; // needs a source to "play"
+      const wasMuted = video.muted;
+      const wasPaused = video.paused;
+      video.muted = false;                  // background loops have no sound track
+      video.play()
+        .then(() => {
+          if (!video.classList.contains('is-front') && wasPaused) video.pause();
+        })
+        .catch(() => { this.soundUnlocked = false; })
+        .finally(() => { if (wasMuted && !this.clipPlaying) video.muted = true; });
+    }
+  }
+
   // Call before playing premade clips.
   beginClips() {
     this.clipPlaying = true;

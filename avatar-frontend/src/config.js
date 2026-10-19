@@ -3,8 +3,9 @@
 // ─────────────────────────────────────────────────────────────
 
 export const CONFIG = {
-  // Your Docker backend (saha-avc-api).
-  API_BASE: 'http://127.0.0.1:8081',
+  // Backend address. Leave empty: the screen server forwards /api to the
+  // Docker backend (see vite.config.js), so phones and other devices work too.
+  API_BASE: '',
 
   // Where premade answer videos live (inside public/videos/).
   VIDEO_BASE: '/videos/',

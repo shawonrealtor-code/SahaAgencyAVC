@@ -12,3 +12,7 @@ Start-Process powershell -ArgumentList "-NoExit", "-Command", "cd '$PSScriptRoot
 Start-Sleep -Seconds 6
 Start-Process "http://localhost:5173"
 Write-Host "Opened http://localhost:5173 - press F11 in Chrome for full screen." -ForegroundColor Green
+$ip = (Get-NetIPAddress -AddressFamily IPv4 -ErrorAction SilentlyContinue |
+       Where-Object { $_.IPAddress -notlike '127.*' -and $_.IPAddress -notlike '169.254.*' -and $_.PrefixOrigin -ne 'WellKnown' } |
+       Select-Object -First 1).IPAddress
+if ($ip) { Write-Host "Other devices on the same Wi-Fi: http://$($ip):5173" -ForegroundColor Cyan }
