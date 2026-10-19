@@ -53,18 +53,28 @@ powershell -ExecutionPolicy Bypass -File .\START.ps1
 Chrome opens the concierge at http://localhost:5173 — press **F11** for full screen and tap the screen once
 (browsers need one tap before they play sound).
 
-## Using it on phones, tablets or another screen
+## Using it on phones, tablets or the hosted website
 
-The screen forwards `/api` and `/health` to the backend on the PC (`avatar-frontend/vite.config.js`),
-so any device that can open the page also gets answers — the backend itself stays private on the PC.
+The AI (Docker backend, Ollama, Kokoro) always runs on the office PC. Other devices reach it in one of two ways:
 
-- **Same Wi-Fi:** open the "Other devices" address that `START.ps1` prints, e.g. `http://192.168.1.20:5173`.
-  (Allow Node.js through Windows Firewall the first time.)
-- **Over the internet / custom domain:** point a tunnel (e.g. Cloudflare Tunnel) at `http://localhost:5173`.
-  Use **https** — phones only allow the microphone on secure pages.
-- **iPhone / iPad:** tap the screen once before asking, so Safari allows her voice and video sound.
-  Voice input needs Siri & Dictation enabled; otherwise use the keyboard button.
-- Note: everyone who can open the address can use the concierge.
+**A. Hosted website (e.g. securepayllc.com, built from this repo)** — the hosting service only serves the
+page and videos, so the PC's backend needs a public address:
+
+1. On the PC run `START.ps1`, then `TUNNEL.ps1` (installs Cloudflare's free tunnel the first time).
+2. It prints and copies a link like `https://securepayllc.com/?api=https://abc-xyz.trycloudflare.com`.
+3. Open that link once on each phone/tablet/screen — the device remembers it. Keep the TUNNEL window open.
+
+The quick-tunnel address changes every time `TUNNEL.ps1` restarts. For a permanent address, create a named
+Cloudflare Tunnel (e.g. `api.securepayllc.com` → `http://localhost:8081`) and set the build variable
+`VITE_API_BASE=https://api.securepayllc.com` on the hosting service — then no `?api=` link is needed.
+(Open `?api=` with nothing after it to clear a remembered address on a device.)
+
+**B. Same Wi-Fi, no hosting** — open the "Other devices" address `START.ps1` prints (e.g. `http://192.168.1.20:5173`);
+the screen server forwards `/api` to the backend (`avatar-frontend/vite.config.js`). Allow Node.js in Windows Firewall.
+
+Notes: phones only allow the microphone on **https** pages. On iPhone/iPad tap the screen once before asking so
+Safari allows sound; voice input needs Siri & Dictation enabled (otherwise use the keyboard button).
+Anyone who can open the address can use the concierge.
 
 ## Project layout
 
@@ -87,6 +97,7 @@ FLOW_PROMPTS.txt         Google Flow prompt for every answer video
 saha-start-frame.png     first frame to use for every Flow clip
 compose.yaml             backend container settings (model, voice, website)
 INSTALL.ps1 / START.ps1  one-time install / daily start
+TUNNEL.ps1               public address for the PC backend (hosted site, phones anywhere)
 voice-samples.ps1        listen to the Kokoro voices
 ```
 

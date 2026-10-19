@@ -1,15 +1,37 @@
 import { CONFIG } from '../config.js';
 
+// Where the backend (office PC) is. In order of priority:
+//   1. ?api=https://xxxx.trycloudflare.com in the page address (remembered on this device;
+//      ?api= with nothing after it clears it)
+//   2. VITE_API_BASE set on the hosting service when the site is built
+//   3. CONFIG.API_BASE ('' = same address as the page, used when the PC serves the page itself)
+function resolveApiBase() {
+  try {
+    const fromUrl = new URLSearchParams(window.location.search).get('api');
+    if (fromUrl !== null) {
+      if (fromUrl.trim()) localStorage.setItem('saha-api-base', fromUrl.trim());
+      else localStorage.removeItem('saha-api-base');
+    }
+  } catch { /* storage blocked: fall through */ }
+  let saved = null;
+  try { saved = localStorage.getItem('saha-api-base'); } catch { /* ignore */ }
+  return (saved || import.meta.env.VITE_API_BASE || CONFIG.API_BASE || '').trim().replace(/\/+$/, '');
+}
+export const API_BASE = resolveApiBase();
+
 // Ask the backend. Returns:
 //   { source: 'library', answer, speech, videos: [...] }  -> play premade video(s)
 //   { source: 'live',    answer, speech }                 -> voice + talking clip
 export async function askConcierge(message, signal) {
-  const response = await fetch(`${CONFIG.API_BASE}/api/ask`, {
+  const response = await fetch(`${API_BASE}/api/ask`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ message }),
     signal,
   });
+  if (!(response.headers.get('content-type') || '').includes('json')) {
+    throw new Error('Failed to fetch: backend not reachable'); // got a web page, not the backend
+  }
   if (!response.ok) {
     let detail = `HTTP ${response.status}`;
     try {
@@ -28,7 +50,7 @@ export async function askConcierge(message, signal) {
 // Kokoro voice for live answers (null if unavailable).
 export async function getVoice(text, signal) {
   try {
-    const response = await fetch(`${CONFIG.API_BASE}/api/tts`, {
+    const response = await fetch(`${API_BASE}/api/tts`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ text }),
@@ -66,8 +88,10 @@ function cleanText(text) {
 // List of premade answers (to preload their videos).
 export async function getLibrary() {
   try {
-    const response = await fetch(`${CONFIG.API_BASE}/api/library`, { signal: AbortSignal.timeout(8000) });
-    return response.ok ? await response.json() : [];
+    const response = await fetch(`${API_BASE}/api/library`, { signal: AbortSignal.timeout(8000) });
+    if (!response.ok) return [];
+    const data = await response.json();
+    return Array.isArray(data) ? data : [];
   } catch {
     return [];
   }
@@ -75,8 +99,10 @@ export async function getLibrary() {
 
 export async function checkHealth() {
   try {
-    const response = await fetch(`${CONFIG.API_BASE}/health`, { signal: AbortSignal.timeout(4000) });
-    return response.ok;
+    const response = await fetch(`${API_BASE}/health`, { signal: AbortSignal.timeout(6000) });
+    if (!response.ok) return false;
+    const data = await response.json(); // a website page here (not JSON) means no backend
+    return data?.status === 'healthy';
   } catch {
     return false;
   }

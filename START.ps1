@@ -16,3 +16,4 @@ $ip = (Get-NetIPAddress -AddressFamily IPv4 -ErrorAction SilentlyContinue |
        Where-Object { $_.IPAddress -notlike '127.*' -and $_.IPAddress -notlike '169.254.*' -and $_.PrefixOrigin -ne 'WellKnown' } |
        Select-Object -First 1).IPAddress
 if ($ip) { Write-Host "Other devices on the same Wi-Fi: http://$($ip):5173" -ForegroundColor Cyan }
+Write-Host "Using the hosted website (securepayllc.com)? Also run:  powershell -ExecutionPolicy Bypass -File .\TUNNEL.ps1" -ForegroundColor Cyan

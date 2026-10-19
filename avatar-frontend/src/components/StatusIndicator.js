@@ -5,7 +5,7 @@ const TEXT = {
   listening: 'Listening…',
   thinking: 'Let me think…',
   speaking: 'Speaking…',
-  offline: 'Concierge offline — check Docker',
+  offline: 'Concierge offline',
 };
 
 export class StatusIndicator {

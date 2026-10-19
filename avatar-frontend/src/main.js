@@ -4,7 +4,7 @@ import { VideoConcierge } from './components/VideoConcierge.js';
 import { MicrophoneButton } from './components/MicrophoneButton.js';
 import { ConversationPanel } from './components/ConversationPanel.js';
 import { StatusIndicator } from './components/StatusIndicator.js';
-import { askConcierge, getVoice, videoExists, checkHealth, getLibrary } from './services/api.js';
+import { askConcierge, getVoice, videoExists, checkHealth, getLibrary, API_BASE } from './services/api.js';
 import { SpeechInput, speechErrorMessage } from './services/speech.js';
 
 // ─────────────────────────────────────────────────────────────
@@ -268,7 +268,7 @@ function friendlyError(error) {
   if (/ollama/i.test(message)) return "I'm having trouble thinking right now. Please make sure Ollama is running.";
   if (/kokoro/i.test(message)) return 'My voice service is unavailable. Please make sure Kokoro is running.';
   if (/failed to fetch|networkerror|load failed/i.test(message))
-    return "I can't reach the concierge service. Please make sure Docker (saha-avc-api) is running.";
+    return "I can't reach the concierge right now. Please try again in a moment, or call us at (703) 627-0444.";
   return 'Sorry, something went wrong. Please try again.';
 }
 
@@ -381,5 +381,6 @@ async function watchBackend() {
   const shown = $('#status').dataset.state;
   if (state === 'idle' && (!ok || shown === 'offline')) status.set(ok ? 'idle' : 'offline');
 }
+console.info('[AVC] backend:', API_BASE || '(same address as this page)');
 watchBackend();
 setInterval(() => { if (state === 'idle') watchBackend(); }, 30000);
