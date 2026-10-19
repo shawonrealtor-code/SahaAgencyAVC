@@ -64,6 +64,11 @@ page and videos, so the PC's backend needs a public address:
 2. It prints and copies a link like `https://securepayllc.com/?api=https://abc-xyz.trycloudflare.com`.
 3. Open that link once on each phone/tablet/screen — the device remembers it. Keep the TUNNEL window open.
 
+**Permanent (recommended): `ONLINE.ps1`** — puts the PC backend on your free ngrok static domain
+(e.g. `https://saha-concierge.ngrok-free.app`). First run asks for the ngrok Authtoken and domain
+(dashboard.ngrok.com) and remembers them. With that domain in `backend.json` (below), plain
+`https://securepayllc.com/` works for every visitor. Keep the ONLINE window open.
+
 The quick-tunnel address changes every time `TUNNEL.ps1` restarts. For the plain address
 (`https://securepayllc.com/`) to work for every visitor, give the PC backend a **permanent** address
 (a named Cloudflare Tunnel such as `https://api.securepayllc.com`, or a free ngrok static domain) and put it in
@@ -104,7 +109,8 @@ FLOW_PROMPTS.txt         Google Flow prompt for every answer video
 saha-start-frame.png     first frame to use for every Flow clip
 compose.yaml             backend container settings (model, voice, website)
 INSTALL.ps1 / START.ps1  one-time install / daily start
-TUNNEL.ps1               public address for the PC backend (hosted site, phones anywhere)
+ONLINE.ps1               permanent public address for the PC backend (ngrok) - hosted site works for everyone
+TUNNEL.ps1               temporary public address (Cloudflare quick tunnel, needs ?api= link)
 voice-samples.ps1        listen to the Kokoro voices
 ```
 
