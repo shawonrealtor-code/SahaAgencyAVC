@@ -64,9 +64,16 @@ page and videos, so the PC's backend needs a public address:
 2. It prints and copies a link like `https://securepayllc.com/?api=https://abc-xyz.trycloudflare.com`.
 3. Open that link once on each phone/tablet/screen — the device remembers it. Keep the TUNNEL window open.
 
-The quick-tunnel address changes every time `TUNNEL.ps1` restarts. For a permanent address, create a named
-Cloudflare Tunnel (e.g. `api.securepayllc.com` → `http://localhost:8081`) and set the build variable
-`VITE_API_BASE=https://api.securepayllc.com` on the hosting service — then no `?api=` link is needed.
+The quick-tunnel address changes every time `TUNNEL.ps1` restarts. For the plain address
+(`https://securepayllc.com/`) to work for every visitor, give the PC backend a **permanent** address
+(a named Cloudflare Tunnel such as `https://api.securepayllc.com`, or a free ngrok static domain) and put it in
+`avatar-frontend/public/backend.json`:
+
+```json
+{ "api": "https://api.securepayllc.com" }
+```
+
+Commit it on GitHub — the hosting service redeploys and every device uses it automatically.
 (Open `?api=` with nothing after it to clear a remembered address on a device.)
 
 **B. Same Wi-Fi, no hosting** — open the "Other devices" address `START.ps1` prints (e.g. `http://192.168.1.20:5173`);

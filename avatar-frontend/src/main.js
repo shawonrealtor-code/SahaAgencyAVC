@@ -4,7 +4,7 @@ import { VideoConcierge } from './components/VideoConcierge.js';
 import { MicrophoneButton } from './components/MicrophoneButton.js';
 import { ConversationPanel } from './components/ConversationPanel.js';
 import { StatusIndicator } from './components/StatusIndicator.js';
-import { askConcierge, getVoice, videoExists, checkHealth, getLibrary, API_BASE } from './services/api.js';
+import { askConcierge, getVoice, videoExists, checkHealth, getLibrary, apiBase } from './services/api.js';
 import { SpeechInput, speechErrorMessage } from './services/speech.js';
 
 // ─────────────────────────────────────────────────────────────
@@ -381,6 +381,6 @@ async function watchBackend() {
   const shown = $('#status').dataset.state;
   if (state === 'idle' && (!ok || shown === 'offline')) status.set(ok ? 'idle' : 'offline');
 }
-console.info('[AVC] backend:', API_BASE || '(same address as this page)');
+apiBase.then((base) => console.info('[AVC] backend:', base || '(same address as this page)'));
 watchBackend();
 setInterval(() => { if (state === 'idle') watchBackend(); }, 30000);
