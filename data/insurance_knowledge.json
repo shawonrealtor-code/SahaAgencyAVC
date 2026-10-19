@@ -1,0 +1,139 @@
+{
+  "business": {
+    "name": "Saha Agency",
+    "type": "Insurance agency",
+    "description": "An independent insurance agency based in Woodbridge, Virginia, helping individuals, families, and businesses explore personal and commercial insurance solutions.",
+    "phone": "+1 703-627-0444",
+    "email": "sahaagency2017@gmail.com",
+    "website": "https://sahaagency.com",
+    "address": {
+      "street": "14484 General Washington Dr",
+      "city": "Woodbridge",
+      "state": "VA",
+      "postal_code": "22193",
+      "country": "United States"
+    },
+    "consultation_days": "Monday through Friday",
+    "opening_time": null,
+    "closing_time": null,
+    "founder": "Sanjit Saha",
+    "established_year": 2016,
+    "agency_reported_figures": {
+      "customers": "5,000+ happy customers",
+      "companies": "85+ companies",
+      "source": "Agency presentation supplied October 4, 2026",
+      "note": "Agency-provided figures. The presentation does not name the companies or specify the nature of each relationship; do not describe all of them as appointed carriers."
+    }
+  },
+  "services": [
+    {
+      "name": "Home Insurance",
+      "description": "Insurance for a home and related property, subject to covered risks, limits, exclusions, and deductibles."
+    },
+    {
+      "name": "Auto Insurance",
+      "description": "Insurance options for personal vehicles, subject to the selected policy."
+    },
+    {
+      "name": "Commercial Auto",
+      "description": "Insurance options for business vehicles and commercial transportation needs."
+    },
+    {
+      "name": "Business Insurance",
+      "description": "Insurance options for business-related risks, depending on the business and selected policy."
+    },
+    {
+      "name": "Business Owners Policy",
+      "description": "A package combining business property and liability protection, subject to eligibility and policy terms."
+    },
+    {
+      "name": "Workers’ Compensation",
+      "description": "Coverage related to workplace injuries or illness, subject to the applicable policy and requirements."
+    },
+    {
+      "name": "Commercial Liability",
+      "description": "Liability coverage options for businesses, subject to policy terms."
+    },
+    {
+      "name": "Professional Liability",
+      "description": "Coverage options for claims related to professional services or advice."
+    },
+    {
+      "name": "Cyber Insurance",
+      "description": "Coverage options related to cyber incidents, data breaches, and technology-related risks."
+    },
+    {
+      "name": "Professional E&O",
+      "description": "Errors and omissions coverage options for professional services."
+    },
+    {
+      "name": "Bond",
+      "description": "Surety solutions for contractual and professional obligations. Ask an advisor about the required bond."
+    },
+    {
+      "name": "Umbrella Insurance",
+      "description": "Additional liability protection beyond underlying policy limits, subject to eligibility and policy terms."
+    },
+    {
+      "name": "Event Insurance",
+      "description": "Protection options for eligible private, corporate, and special events against certain covered risks and unexpected situations. Coverage, limits, exclusions, and pricing depend on event details and the selected policy."
+    },
+    {
+      "name": "Commercial Property Insurance",
+      "description": "Coverage options to help protect commercial buildings, property, and related business assets. Coverage, limits, exclusions, and pricing depend on business and asset details and the selected policy."
+    }
+  ],
+  "agency_support": [
+    "Personalized insurance guidance",
+    "Comparison of options from multiple insurance carriers",
+    "Risk assessments",
+    "Policy selection assistance",
+    "Policy reviews",
+    "Claims assistance"
+  ],
+  "quote_request": {
+    "methods": [
+      "Call +1 703-627-0444",
+      "Use the quote request form on the agency website",
+      "Email sahaagency2017@gmail.com"
+    ],
+    "website_form_fields": [
+      "Full name",
+      "Email address",
+      "Phone number",
+      "ZIP code",
+      "Coverage details"
+    ],
+    "note": "The assistant cannot submit a quote request or calculate a premium. An advisor must confirm pricing, eligibility, and available coverage.",
+    "process": "Customers provide information needed for a quote or application. The insurance company reviews the information and determines available coverage, pricing, and policy terms. Business quotes depend on business details; event quotes depend on event details."
+  },
+  "coverage_note": "Protection depends on the specific policy, insurance carrier, covered risks, exclusions, limits, and deductibles.",
+  "unconfirmed_information": [
+    "Exact opening and closing times",
+    "States where the agency is licensed",
+    "Names of represented insurance carriers",
+    "Premiums and guaranteed discounts",
+    "Specific eligibility and underwriting requirements",
+    "Coverage start dates",
+    "Individual policy details",
+    "Claim status or claim approval",
+    "Specific financial services beyond the listed insurance services"
+  ],
+  "social_links": {
+    "facebook": "https://www.facebook.com/profile.php?id=61587350614029",
+    "instagram": "https://www.instagram.com/sahaa_gency/",
+    "x": "https://x.com/sahaagen",
+    "threads": "https://www.threads.com/@sahaa_gency",
+    "tiktok": "https://www.tiktok.com/@saha_agency",
+    "youtube": "https://www.youtube.com/@SahaAgency-m2h"
+  },
+  "source_notes": [
+    "Based on the supplied Saha Agency document and September 25, 2026 website screenshots.",
+    "Additional service names come from the website Services screenshots.",
+    "Most FAQ answers were collapsed in the screenshots and were not available to read.",
+    "Updated using SAHA_Agency_Presentation_Document(2).docx supplied October 4, 2026.",
+    "The latest presentation is treated as authoritative for the current Woodbridge address, founder, and founding year. The older address is superseded; no second office is inferred.",
+    "Earlier service listings, contact methods, consultation days, and social links are retained where the latest presentation does not contradict them.",
+    "Customer and company counts are agency-reported presentation figures, not independently verified statistics."
+  ]
+}

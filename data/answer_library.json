@@ -1,0 +1,582 @@
+{
+  "_how_it_works": [
+    "Each entry is one prepared answer. When a visitor's question matches, she plays the matching video(s).",
+    "Videos go in avatar-frontend/public/videos/library/ with the exact file names in 'videos'.",
+    "If a video file is missing, she still gives this answer using the voice + talking clip.",
+    "text = shown on screen.  speech = what she says.  parts = one Flow clip each (see FLOW_PROMPTS.txt).",
+    "questions = example wordings; add your customers' real wordings to improve matching."
+  ],
+  "answers": [
+    {
+      "id": "greeting",
+      "text": "Hello, and welcome to Saha Agency! I'm your virtual concierge. How can I help you today?",
+      "speech": "Hello, and welcome to Saha Agency! I'm your virtual concierge. How can I help you today?",
+      "parts": [
+        "Hello, and welcome to Saha Agency! I'm your virtual concierge. How can I help you today?"
+      ],
+      "videos": [
+        "library/greeting.mp4"
+      ],
+      "questions": [
+        "hello",
+        "hi",
+        "good morning",
+        "good afternoon",
+        "hey",
+        "good evening",
+        "hello there",
+        "hi there"
+      ]
+    },
+    {
+      "id": "who_are_you",
+      "text": "I'm Saha Agency's virtual concierge. I can tell you about our insurance services and how to reach an advisor.",
+      "speech": "I'm Saha Agency's virtual concierge. I can tell you about our insurance services and how to reach an advisor.",
+      "parts": [
+        "I'm Saha Agency's virtual concierge. I can tell you about our insurance services and how to reach an advisor."
+      ],
+      "videos": [
+        "library/who_are_you.mp4"
+      ],
+      "questions": [
+        "who are you",
+        "are you a real person",
+        "are you a robot",
+        "what can you do",
+        "what are you",
+        "are you real",
+        "how can you help me",
+        "what is your name"
+      ]
+    },
+    {
+      "id": "thank_you",
+      "text": "You're very welcome! Is there anything else I can help you with?",
+      "speech": "You're very welcome! Is there anything else I can help you with?",
+      "parts": [
+        "You're very welcome! Is there anything else I can help you with?"
+      ],
+      "videos": [
+        "library/thank_you.mp4"
+      ],
+      "questions": [
+        "thank you",
+        "thanks",
+        "that's helpful",
+        "great thanks",
+        "thank you so much",
+        "thanks a lot",
+        "appreciate it",
+        "that was helpful"
+      ]
+    },
+    {
+      "id": "goodbye",
+      "text": "Thank you for visiting Saha Agency. Have a wonderful day!",
+      "speech": "Thank you for visiting Saha Agency. Have a wonderful day!",
+      "parts": [
+        "Thank you for visiting Saha Agency. Have a wonderful day!"
+      ],
+      "videos": [
+        "library/goodbye.mp4"
+      ],
+      "questions": [
+        "bye",
+        "goodbye",
+        "that's all",
+        "see you later",
+        "see you",
+        "have a nice day",
+        "that is all",
+        "i am done"
+      ]
+    },
+    {
+      "id": "about_agency",
+      "text": "Saha Agency is an independent insurance agency in Woodbridge, Virginia, founded in 2016. We help individuals, families, and businesses find the right personal and commercial insurance.",
+      "speech": "Saha Agency is an independent insurance agency in Woodbridge, Virginia, founded in twenty sixteen. We help individuals, families, and businesses find the right personal and commercial insurance.",
+      "parts": [
+        "Saha Agency is an independent insurance agency in Woodbridge, Virginia, founded in twenty sixteen.",
+        "We help individuals, families, and businesses find the right personal and commercial insurance."
+      ],
+      "videos": [
+        "library/about_agency_1.mp4",
+        "library/about_agency_2.mp4"
+      ],
+      "questions": [
+        "tell me about your agency",
+        "what is saha agency",
+        "what do you do",
+        "how long have you been in business",
+        "tell me about saha agency",
+        "what kind of agency is this",
+        "who are you guys"
+      ]
+    },
+    {
+      "id": "founder",
+      "text": "Saha Agency was founded in 2016 by Sanjit Saha.",
+      "speech": "Saha Agency was founded in twenty sixteen by Sanjit Saha.",
+      "parts": [
+        "Saha Agency was founded in twenty sixteen by Sanjit Saha."
+      ],
+      "videos": [
+        "library/founder.mp4"
+      ],
+      "questions": [
+        "who founded the agency",
+        "who is the owner",
+        "who started saha agency",
+        "who owns saha agency",
+        "when was saha agency founded",
+        "who is sanjit saha"
+      ]
+    },
+    {
+      "id": "location",
+      "text": "Our office is at 14484 General Washington Dr, Woodbridge, VA 22193.",
+      "speech": "Our office is at fourteen four eighty-four General Washington Drive, in Woodbridge, Virginia.",
+      "parts": [
+        "Our office is at fourteen four eighty-four General Washington Drive, in Woodbridge, Virginia."
+      ],
+      "videos": [
+        "library/location.mp4"
+      ],
+      "questions": [
+        "where are you located",
+        "what is your address",
+        "where is your office",
+        "how do i find your office",
+        "where is saha agency",
+        "where are you"
+      ]
+    },
+    {
+      "id": "phone",
+      "text": "You can call us at 703-627-0444. Our advisors will be happy to help.",
+      "speech": "You can call us at seven zero three, six two seven, zero four four four. Our advisors will be happy to help.",
+      "parts": [
+        "You can call us at seven zero three, six two seven, zero four four four. Our advisors will be happy to help."
+      ],
+      "videos": [
+        "library/phone.mp4"
+      ],
+      "questions": [
+        "what is your phone number",
+        "how can i call you",
+        "contact number",
+        "what is your number",
+        "can i get your phone number",
+        "how do i contact you",
+        "phone number"
+      ]
+    },
+    {
+      "id": "email_website",
+      "text": "You can email us at sahaagency2017@gmail.com, or visit sahaagency.com.",
+      "speech": "You can email us at saha agency twenty seventeen at gmail dot com, or visit saha agency dot com.",
+      "parts": [
+        "You can email us at saha agency twenty seventeen at gmail dot com, or visit saha agency dot com."
+      ],
+      "videos": [
+        "library/email_website.mp4"
+      ],
+      "questions": [
+        "what is your email",
+        "do you have a website",
+        "how can i contact you online",
+        "what is your website",
+        "how can i email you",
+        "what is your email address"
+      ]
+    },
+    {
+      "id": "hours",
+      "text": "Consultations are available Monday through Friday. Please call us for our exact office hours.",
+      "speech": "Consultations are available Monday through Friday. Please call us for our exact office hours.",
+      "parts": [
+        "Consultations are available Monday through Friday. Please call us for our exact office hours."
+      ],
+      "videos": [
+        "library/hours.mp4"
+      ],
+      "questions": [
+        "what are your hours",
+        "when are you open",
+        "are you open on saturday",
+        "are you open today",
+        "what time do you open",
+        "are you open on weekends",
+        "what are your office hours",
+        "when can i come in"
+      ]
+    },
+    {
+      "id": "get_quote",
+      "text": "Getting a quote is easy. You can call us, email us, or use the quote form on our website. An advisor will then confirm your pricing and coverage options.",
+      "speech": "Getting a quote is easy. You can call us, email us, or use the quote form on our website. An advisor will then confirm your pricing and coverage options.",
+      "parts": [
+        "Getting a quote is easy. You can call us, email us, or use the quote form on our website.",
+        "An advisor will then confirm your pricing and coverage options."
+      ],
+      "videos": [
+        "library/get_quote_1.mp4",
+        "library/get_quote_2.mp4"
+      ],
+      "questions": [
+        "how do i get a quote",
+        "how much does insurance cost",
+        "can i get a price",
+        "i want a quote",
+        "can i get a quote",
+        "how do i get insurance",
+        "i want to buy insurance",
+        "how much does insurance cost here",
+        "can you give me a quote",
+        "how can i get a quote"
+      ]
+    },
+    {
+      "id": "claims",
+      "text": "We can help with claims. Please call 703-627-0444, and an advisor will guide you.",
+      "speech": "We can help with claims. Please call seven zero three, six two seven, zero four four four, and an advisor will guide you.",
+      "parts": [
+        "We can help with claims. Please call seven zero three, six two seven, zero four four four, and an advisor will guide you."
+      ],
+      "videos": [
+        "library/claims.mp4"
+      ],
+      "questions": [
+        "i need to file a claim",
+        "help with a claim",
+        "i had an accident",
+        "how do i file a claim",
+        "i want to make a claim",
+        "claim help",
+        "who do i call for a claim"
+      ]
+    },
+    {
+      "id": "carriers",
+      "text": "As an independent agency, we compare options from multiple insurance companies to find a good fit for you.",
+      "speech": "As an independent agency, we compare options from multiple insurance companies to find a good fit for you.",
+      "parts": [
+        "As an independent agency, we compare options from multiple insurance companies to find a good fit for you."
+      ],
+      "videos": [
+        "library/carriers.mp4"
+      ],
+      "questions": [
+        "which insurance companies do you work with",
+        "do you compare quotes",
+        "are you independent",
+        "what companies do you work with",
+        "which carriers do you have",
+        "do you work with progressive",
+        "how many insurance companies do you work with"
+      ]
+    },
+    {
+      "id": "services_overview",
+      "text": "We offer home, auto, and umbrella insurance, plus many policies for businesses. That includes commercial auto, workers' compensation, liability, cyber, bonds, and event insurance.",
+      "speech": "We offer home, auto, and umbrella insurance, plus many policies for businesses. That includes commercial auto, workers' compensation, liability, cyber, bonds, and event insurance.",
+      "parts": [
+        "We offer home, auto, and umbrella insurance, plus many policies for businesses.",
+        "That includes commercial auto, workers' compensation, liability, cyber, bonds, and event insurance."
+      ],
+      "videos": [
+        "library/services_overview_1.mp4",
+        "library/services_overview_2.mp4"
+      ],
+      "questions": [
+        "what insurance do you offer",
+        "what services do you have",
+        "what kind of insurance do you sell",
+        "what services do you offer",
+        "what types of insurance do you have",
+        "what do you sell",
+        "what kind of insurance do you offer",
+        "what insurance can i get here"
+      ]
+    },
+    {
+      "id": "not_sure",
+      "text": "I'm sorry, I don't have that information. Please call our advisors at 703-627-0444.",
+      "speech": "I'm sorry, I don't have that information. Please call our advisors at seven zero three, six two seven, zero four four four.",
+      "parts": [
+        "I'm sorry, I don't have that information. Please call our advisors at seven zero three, six two seven, zero four four four."
+      ],
+      "videos": [
+        "library/not_sure.mp4"
+      ],
+      "questions": [
+        "(used when the concierge cannot answer)"
+      ]
+    },
+    {
+      "id": "service_home",
+      "text": "Yes, we offer home insurance to help protect your home and belongings. An advisor can give you a quote.",
+      "speech": "Yes, we offer home insurance to help protect your home and belongings. An advisor can give you a quote.",
+      "parts": [
+        "Yes, we offer home insurance to help protect your home and belongings. An advisor can give you a quote."
+      ],
+      "videos": [
+        "library/service_home.mp4"
+      ],
+      "questions": [
+        "do you offer home insurance",
+        "homeowners insurance",
+        "insurance for my house",
+        "home insurance",
+        "i need insurance for my house",
+        "do you insure houses",
+        "house insurance"
+      ]
+    },
+    {
+      "id": "service_auto",
+      "text": "Yes, we offer auto insurance for your personal vehicles. Call us, and an advisor can give you a quote.",
+      "speech": "Yes, we offer auto insurance for your personal vehicles. Call us, and an advisor can give you a quote.",
+      "parts": [
+        "Yes, we offer auto insurance for your personal vehicles. Call us, and an advisor can give you a quote."
+      ],
+      "videos": [
+        "library/service_auto.mp4"
+      ],
+      "questions": [
+        "do you have car insurance",
+        "auto insurance",
+        "insurance for my car",
+        "car insurance",
+        "do you insure cars",
+        "i need car insurance",
+        "vehicle insurance"
+      ]
+    },
+    {
+      "id": "service_commercial_auto",
+      "text": "Yes, we offer commercial auto insurance for business vehicles. An advisor can help you find the right coverage.",
+      "speech": "Yes, we offer commercial auto insurance for business vehicles. An advisor can help you find the right coverage.",
+      "parts": [
+        "Yes, we offer commercial auto insurance for business vehicles. An advisor can help you find the right coverage."
+      ],
+      "videos": [
+        "library/service_commercial_auto.mp4"
+      ],
+      "questions": [
+        "commercial auto",
+        "insurance for my company vehicles",
+        "truck insurance for business",
+        "do you insure business vehicles",
+        "commercial vehicle insurance",
+        "insurance for company trucks",
+        "fleet insurance"
+      ]
+    },
+    {
+      "id": "service_business",
+      "text": "Yes, we offer business insurance. The right coverage depends on your business, and an advisor can help.",
+      "speech": "Yes, we offer business insurance. The right coverage depends on your business, and an advisor can help.",
+      "parts": [
+        "Yes, we offer business insurance. The right coverage depends on your business, and an advisor can help."
+      ],
+      "videos": [
+        "library/service_business.mp4"
+      ],
+      "questions": [
+        "business insurance",
+        "insurance for my company",
+        "small business insurance",
+        "do you offer business insurance",
+        "insurance for my business",
+        "i own a business"
+      ]
+    },
+    {
+      "id": "service_bop",
+      "text": "A business owners policy combines property and liability protection in one package. An advisor can check if it fits.",
+      "speech": "A business owners policy combines property and liability protection in one package. An advisor can check if it fits.",
+      "parts": [
+        "A business owners policy combines property and liability protection in one package. An advisor can check if it fits."
+      ],
+      "videos": [
+        "library/service_bop.mp4"
+      ],
+      "questions": [
+        "what is a business owners policy",
+        "bop",
+        "package policy for my business",
+        "business owners policy",
+        "bop insurance",
+        "do you offer a bop"
+      ]
+    },
+    {
+      "id": "service_workers_comp",
+      "text": "Yes, we offer workers' compensation, which covers workplace injuries and illness. An advisor can help you get started.",
+      "speech": "Yes, we offer workers' compensation, which covers workplace injuries and illness. An advisor can help you get started.",
+      "parts": [
+        "Yes, we offer workers' compensation, which covers workplace injuries and illness. An advisor can help you get started."
+      ],
+      "videos": [
+        "library/service_workers_comp.mp4"
+      ],
+      "questions": [
+        "workers comp",
+        "workers compensation",
+        "insurance for my employees",
+        "do you offer workers comp",
+        "workers comp insurance",
+        "insurance for my employees injuries"
+      ]
+    },
+    {
+      "id": "service_commercial_liability",
+      "text": "Yes, we offer commercial liability insurance to protect your business. An advisor can explain your options.",
+      "speech": "Yes, we offer commercial liability insurance to protect your business. An advisor can explain your options.",
+      "parts": [
+        "Yes, we offer commercial liability insurance to protect your business. An advisor can explain your options."
+      ],
+      "videos": [
+        "library/service_commercial_liability.mp4"
+      ],
+      "questions": [
+        "general liability",
+        "commercial liability",
+        "liability insurance for business",
+        "do you offer general liability",
+        "commercial liability insurance",
+        "liability insurance for my business"
+      ]
+    },
+    {
+      "id": "service_professional_liability",
+      "text": "Yes, we offer professional liability insurance for claims related to your professional services or advice.",
+      "speech": "Yes, we offer professional liability insurance for claims related to your professional services or advice.",
+      "parts": [
+        "Yes, we offer professional liability insurance for claims related to your professional services or advice."
+      ],
+      "videos": [
+        "library/service_professional_liability.mp4"
+      ],
+      "questions": [
+        "professional liability",
+        "malpractice insurance",
+        "insurance for consultants",
+        "do you offer professional liability",
+        "professional liability insurance"
+      ]
+    },
+    {
+      "id": "service_cyber",
+      "text": "Yes, we offer cyber insurance for data breaches and other cyber risks. An advisor can explain the options.",
+      "speech": "Yes, we offer cyber insurance for data breaches and other cyber risks. An advisor can explain the options.",
+      "parts": [
+        "Yes, we offer cyber insurance for data breaches and other cyber risks. An advisor can explain the options."
+      ],
+      "videos": [
+        "library/service_cyber.mp4"
+      ],
+      "questions": [
+        "cyber insurance",
+        "data breach coverage",
+        "hacking insurance",
+        "do you offer cyber insurance",
+        "cyber liability",
+        "data breach insurance"
+      ]
+    },
+    {
+      "id": "service_eo",
+      "text": "Yes, we offer professional errors and omissions insurance for businesses that provide professional services.",
+      "speech": "Yes, we offer professional errors and omissions insurance for businesses that provide professional services.",
+      "parts": [
+        "Yes, we offer professional errors and omissions insurance for businesses that provide professional services."
+      ],
+      "videos": [
+        "library/service_eo.mp4"
+      ],
+      "questions": [
+        "errors and omissions",
+        "e and o insurance",
+        "e&o",
+        "do you offer errors and omissions",
+        "e&o insurance"
+      ]
+    },
+    {
+      "id": "service_bond",
+      "text": "Yes, we provide surety bonds for contractual and professional needs. An advisor can help you find the right bond.",
+      "speech": "Yes, we provide surety bonds for contractual and professional needs. An advisor can help you find the right bond.",
+      "parts": [
+        "Yes, we provide surety bonds for contractual and professional needs. An advisor can help you find the right bond."
+      ],
+      "videos": [
+        "library/service_bond.mp4"
+      ],
+      "questions": [
+        "do you offer bonds",
+        "surety bond",
+        "contractor bond",
+        "surety bonds",
+        "do you do bonds",
+        "i need a bond",
+        "bond insurance"
+      ]
+    },
+    {
+      "id": "service_umbrella",
+      "text": "Umbrella insurance adds extra liability protection beyond your other policies. An advisor can tell you if you qualify.",
+      "speech": "Umbrella insurance adds extra liability protection beyond your other policies. An advisor can tell you if you qualify.",
+      "parts": [
+        "Umbrella insurance adds extra liability protection beyond your other policies. An advisor can tell you if you qualify."
+      ],
+      "videos": [
+        "library/service_umbrella.mp4"
+      ],
+      "questions": [
+        "umbrella insurance",
+        "extra liability coverage",
+        "umbrella policy",
+        "do you offer umbrella insurance"
+      ]
+    },
+    {
+      "id": "service_event",
+      "text": "Yes, we offer event insurance for weddings, parties, and corporate events. Coverage depends on your event details.",
+      "speech": "Yes, we offer event insurance for weddings, parties, and corporate events. Coverage depends on your event details.",
+      "parts": [
+        "Yes, we offer event insurance for weddings, parties, and corporate events. Coverage depends on your event details."
+      ],
+      "videos": [
+        "library/service_event.mp4"
+      ],
+      "questions": [
+        "event insurance",
+        "wedding insurance",
+        "insurance for a party",
+        "do you offer event insurance",
+        "special event insurance"
+      ]
+    },
+    {
+      "id": "service_commercial_property",
+      "text": "Yes, we offer commercial property insurance to protect your buildings and business assets. An advisor can help.",
+      "speech": "Yes, we offer commercial property insurance to protect your buildings and business assets. An advisor can help.",
+      "parts": [
+        "Yes, we offer commercial property insurance to protect your buildings and business assets. An advisor can help."
+      ],
+      "videos": [
+        "library/service_commercial_property.mp4"
+      ],
+      "questions": [
+        "commercial property insurance",
+        "insurance for my building",
+        "business property coverage",
+        "do you offer commercial property insurance",
+        "insurance for my business building",
+        "commercial building insurance"
+      ]
+    }
+  ]
+}

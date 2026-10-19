@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#eed8bd" />
+  <title>Saha Agency — Virtual Concierge</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="kiosk" id="kiosk" data-state="idle">
+    <!-- The digital receptionist -->
+    <main class="stage">
+      <div class="avatar" id="avatar" role="img" aria-label="Saha Agency virtual concierge"></div>
+      <div class="avatar-loading" id="avatar-loading">
+        <span class="spinner" aria-hidden="true"></span>
+        <span>Preparing your concierge…</span>
+      </div>
+    </main>
+
+    <!-- Brand, conversation and controls -->
+    <aside class="panel">
+      <header class="brandbar">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">
+            <img id="brand-logo" src="/saha-logo.png" alt="" />
+            <span class="brand-monogram">S</span>
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">SAHA AGENCY</span>
+            <span class="brand-sub">Insurance · Woodbridge, VA</span>
+          </div>
+        </div>
+        <div class="brand-meta">
+          <span class="meta-label">Virtual Concierge</span>
+          <span class="meta-clock" id="clock"></span>
+        </div>
+      </header>
+
+      <section class="dock">
+        <div class="conversation" id="conversation">
+          <div class="greeting" id="greeting">
+            <span class="greeting-kicker">Welcome</span>
+            <h1 class="greeting-hello">How may I help you today?</h1>
+            <p class="greeting-ask">Tap the microphone and ask me anything about our insurance services.</p>
+          </div>
+
+          <div class="turn turn-visitor" id="visitor-turn" hidden>
+            <span class="turn-label">You asked</span>
+            <p class="turn-text" id="visitor-text"></p>
+          </div>
+
+          <div class="turn turn-concierge" id="concierge-turn" hidden>
+            <span class="turn-label">Saha Concierge</span>
+            <p class="turn-text" id="concierge-text"></p>
+          </div>
+        </div>
+
+        <div class="suggestions" id="suggestions" aria-label="Suggested questions"></div>
+
+        <div class="status" id="status" aria-live="polite">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span class="status-text" id="status-text">Tap to speak</span>
+        </div>
+
+        <div class="controls">
+          <button class="icon-button" id="keyboard-toggle" type="button" aria-label="Type a question"
+            title="Type a question">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="2.5" y="6" width="19" height="12" rx="2.5" />
+              <path d="M6 10h.01M9.5 10h.01M13 10h.01M16.5 10h.01M7 14h10" />
+            </svg>
+          </button>
+
+          <div class="mic-wrap">
+            <canvas class="mic-wave" id="mic-wave" width="320" height="320" aria-hidden="true"></canvas>
+            <span class="mic-ring ring-1" aria-hidden="true"></span>
+            <span class="mic-ring ring-2" aria-hidden="true"></span>
+            <button class="mic-button" id="mic-button" type="button" aria-label="Tap to speak">
+              <svg class="i-mic" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="9" y="3" width="6" height="11" rx="3" />
+                <path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M8.5 21h7" />
+              </svg>
+              <svg class="i-stop" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="7" y="7" width="10" height="10" rx="2" />
+              </svg>
+              <span class="i-think" aria-hidden="true"></span>
+            </button>
+          </div>
+
+          <button class="icon-button" id="reset-button" type="button" aria-label="Start over" title="Start over">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 12a8 8 0 1 0 2.5-5.8" />
+              <path d="M4 4v4.5h4.5" />
+            </svg>
+          </button>
+        </div>
+
+        <form class="type-form" id="type-form" hidden>
+          <input id="type-input" type="text" autocomplete="off" placeholder="Type your question…"
+            aria-label="Your question" maxlength="400" />
+          <button type="submit">Ask</button>
+        </form>
+      </section>
+
+      <footer class="contact" id="contact"></footer>
+    </aside>
+  </div>
+
+  <!-- Voice for live answers -->
+  <audio id="answer-audio" preload="auto"></audio>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

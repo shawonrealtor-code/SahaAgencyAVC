@@ -1,0 +1,59 @@
+SAHA AVC 3.1 - Virtual Concierge with premade answer videos
+============================================================
+
+WHAT'S NEW IN 3.1
+  - All 31 of your Flow answer videos are included (renamed, silences trimmed, same volume).
+  - Idle / listening / thinking / talking clips resized and colour-matched to the answer
+    videos, so she no longer "jumps" in size between states.
+  - New screen design: on a landscape TV she stands on the left with the conversation on
+    the right; on a portrait screen the conversation card sits at the bottom.
+  - Answer videos are preloaded in the background, so they start instantly.
+  - 6 quick-tap questions (all answered with videos), contact strip, online indicator.
+  - Many more example questions, so common questions match a video more often.
+  - Bug fixes: stopping or interrupting an answer now always returns cleanly to idle.
+
+HOW IT WORKS
+  Visitor asks -> the backend checks the premade answers (data\answer_library.json)
+    - Common question  -> plays her premade video (with its own voice)
+    - Anything else    -> live answer from Qwen + website, spoken by Kokoro,
+                          over her talking clip (talking_base.mp4)
+    - A premade video file missing -> that answer is spoken by Kokoro instead
+
+INSTALL (once)
+  0. Close any old concierge windows (the black PowerShell window running "npm run dev").
+  1. Get the project folder:  git clone https://github.com/shawonrealtor-code/SahaAgencyAVC.git "C:\Saha AVC"
+     (or download the ZIP from GitHub and extract it to C:\Saha AVC)
+  2. Make sure Ollama and Docker Desktop are running.
+  3. In PowerShell:
+       cd "C:\Saha AVC"
+       powershell -ExecutionPolicy Bypass -File .\INSTALL.ps1
+
+EVERY DAY
+       cd "C:\Saha AVC"
+       powershell -ExecutionPolicy Bypass -File .\START.ps1
+  Chrome opens the concierge. Press F11 for full screen.
+  Tap the screen once after it opens (browsers need one tap before they play sound).
+
+QUICK TEST
+  Tap these and check the video plays with her voice:
+    What insurance do you offer?   (two videos back to back)
+    Where is your office?
+  Then ask something unusual, e.g. "Do you do renters insurance?" -> live voice answer.
+
+FOLDERS
+  data\answer_library.json        premade answers (text, spoken words, video names, example questions)
+  data\insurance_knowledge.json   agency facts for live answers
+  avatar-frontend\public\videos\  idle_loop, listening, thinking, talking_base + library\ (31 answers)
+
+SETTINGS
+  avatar-frontend\src\config.js   quick-tap questions, phone/address shown on screen
+  compose.yaml                    KOKORO_VOICE / KOKORO_SPEED = voice for live answers
+                                  then run:  docker compose up -d --build
+  voice-samples.ps1               hear all Kokoro voices
+
+ADDING OR REPLACING AN ANSWER VIDEO LATER
+  Make it in Flow with saha-start-frame.png as the first frame (prompts in FLOW_PROMPTS.txt),
+  save it in avatar-frontend\public\videos\library\ with the exact name, refresh Chrome.
+  (Optional: tools\prepare_clips.py trims silence and evens the volume - needs Python + ffmpeg.)
+
+The old folders "C:\Saha AVC 3.0" and "C:\Saha AVC 2.0 3D Test" can be deleted once this works.

@@ -1,0 +1,17 @@
+# Dependencies and builds
+node_modules/
+dist/
+__pycache__/
+*.pyc
+
+# Runtime cache (website copy made by the backend)
+cache/
+
+# Local / editor files
+*.local
+.env
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log

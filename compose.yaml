@@ -1,0 +1,21 @@
+name: saha-avc
+
+services:
+  api:
+    build:
+      context: ./backend
+    container_name: saha-avc-api
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8081:8080"
+    environment:
+      OLLAMA_MODEL: "qwen3:8b"
+      # Her voice for live (non-premade) answers: one Kokoro voice or a blend like "af_heart+af_bella"
+      KOKORO_VOICE: "af_heart"
+      # Speaking speed: 1.0 normal, 0.95 calmer
+      KOKORO_SPEED: "1.0"
+      WEBSITE_URL: "https://sahaagency.com"
+      WEBSITE_REFRESH_HOURS: "6"
+    volumes:
+      - "./data:/app/data:ro"
+      - "./cache:/app/cache"
