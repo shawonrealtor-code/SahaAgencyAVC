@@ -28,7 +28,10 @@ if (-not (Get-Command cloudflared -ErrorAction SilentlyContinue)) {
 # 3. Start the tunnel and wait for its public address.
 $log = Join-Path $env:TEMP 'saha-avc-tunnel.log'
 Remove-Item $log -ErrorAction SilentlyContinue
-$tunnel = Start-Process cloudflared -ArgumentList 'tunnel', '--no-autoupdate', '--url', 'http://localhost:8081' `
+# Use an empty settings file of our own, so any other file in %USERPROFILE%\.cloudflared is ignored.
+$cfg = Join-Path $env:TEMP 'saha-avc-tunnel.yml'
+Set-Content -Path $cfg -Value '# Saha AVC quick tunnel - no settings needed' -Encoding ASCII
+$tunnel = Start-Process cloudflared -ArgumentList 'tunnel', '--config', "`"$cfg`"", '--no-autoupdate', '--url', 'http://localhost:8081' `
   -RedirectStandardError $log -PassThru -WindowStyle Hidden
 Write-Host "Opening the secure tunnel..." -ForegroundColor Cyan
 
