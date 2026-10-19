@@ -41,7 +41,9 @@ for ($i = 0; $i -lt 60 -and -not $url; $i++) {
   }
 }
 if (-not $url) {
-  Write-Host "Could not open the tunnel. Details: $log" -ForegroundColor Red
+  Write-Host "Could not open the tunnel. Last lines of $log :" -ForegroundColor Red
+  if (Test-Path $log) { Get-Content $log -Tail 15 | ForEach-Object { Write-Host "  $_" } }
+  if ($tunnel.HasExited) { Write-Host "cloudflared stopped with exit code $($tunnel.ExitCode)." -ForegroundColor Red }
   Stop-Process -Id $tunnel.Id -ErrorAction SilentlyContinue
   exit 1
 }
