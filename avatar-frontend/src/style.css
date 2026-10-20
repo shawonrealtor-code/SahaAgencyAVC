@@ -494,7 +494,7 @@ h1, p { margin: 0; }
   font-size: clamp(12px, 1.35vmin, 14px);
   color: var(--muted);
 }
-.contact-item { display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; }
+.contact-item { display: inline-flex; align-items: center; gap: 8px; min-width: 0; text-align: left; }
 .contact-item svg { width: 15px; height: 15px; flex: none; fill: none; stroke: var(--gold-deep); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 .contact-item strong { color: var(--navy); font-weight: 600; }
 
@@ -620,4 +620,18 @@ h1, p { margin: 0; }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+}
+
+/* ---------- narrow panel (small laptop / half-screen window) ---------- */
+.panel { container-type: inline-size; container-name: panel; }
+.brandbar { flex-wrap: wrap; }
+.brand-name, .brand-sub { overflow: hidden; text-overflow: ellipsis; }
+@container panel (max-width: 640px) {
+  .brand-meta { display: none; }
+  .brand-name { font-size: clamp(16px, 4.6cqi, 26px); letter-spacing: 0.1em; }
+  .brand-sub { letter-spacing: 0.14em; }
+}
+@container panel (max-width: 460px) {
+  .brand-sub { display: none; }
+  .contact-item.is-address { display: none; }
 }
