@@ -18,3 +18,7 @@ Thumbs.db
 
 # PC-only settings for ONLINE.ps1
 online-settings.json
+
+# PC-only autostart files
+autostart-settings.json
+logs/

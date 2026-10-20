@@ -116,6 +116,7 @@ saha-start-frame.png     first frame to use for every Flow clip
 compose.yaml             backend container settings (model, voice, website)
 INSTALL.ps1 / START.ps1  one-time install / daily start
 UPDATE.ps1               get the latest version from GitHub and rebuild
+AUTOSTART-ON.ps1 / -OFF  start everything automatically at login (AUTORUN.ps1 keeps it running)
 ONLINE.ps1               permanent public address for the PC backend (ngrok) - hosted site works for everyone
 TUNNEL.ps1               temporary public address (Cloudflare quick tunnel, needs ?api= link)
 voice-samples.ps1        listen to the Kokoro voices
@@ -131,6 +132,18 @@ Answers follow the agency rules: no prices, carriers or guarantees, and lines th
 - To edit: change `tools/faq_source_1.py` / `faq_source_2.py`, run `python tools/build_faq.py`,
   then `python backend/tests/test_faq_match.py` (matching accuracy check, currently 93/98 with no wrong instant answers).
 - Small text edits can also be made directly in `data/faq.json`; the backend reloads it automatically.
+
+## Start automatically (recommended for the office PC)
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\AUTOSTART-ON.ps1
+```
+
+Creates a Windows startup task that runs `AUTORUN.ps1` hidden at every login. Every 30 seconds it makes sure
+Docker Desktop, Ollama, the Kokoro voice container, the backend, the screen server and ngrok (if `ONLINE.ps1`
+was set up once) are running, and restarts whatever stopped. It can also open the concierge full screen
+(Chrome kiosk mode, sound allowed without a tap). It also turns off sleep while plugged in.
+Progress: `logs\autorun.log`. Turn off with `AUTOSTART-OFF.ps1`.
 
 ## Updating the office PC
 

@@ -19,7 +19,7 @@ if ((Test-Path '.git') -and (Get-Command git -ErrorAction SilentlyContinue)) {
   Remove-Item $dir -Recurse -Force -ErrorAction SilentlyContinue
   Expand-Archive $zip $dir -Force
   $src = (Get-ChildItem $dir -Directory | Select-Object -First 1).FullName
-  robocopy $src $PSScriptRoot /E /XD node_modules cache .git /XF online-settings.json /NFL /NDL /NJH /NJS /NP | Out-Null
+  robocopy $src $PSScriptRoot /E /XD node_modules cache logs .git /XF online-settings.json autostart-settings.json /NFL /NDL /NJH /NJS /NP | Out-Null
   if ($LASTEXITCODE -ge 8) { Write-Host "Copying the new files failed (robocopy $LASTEXITCODE)." -ForegroundColor Red; exit 1 }
 }
 
