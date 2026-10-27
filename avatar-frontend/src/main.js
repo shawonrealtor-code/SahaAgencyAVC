@@ -4,7 +4,7 @@ import { VideoConcierge } from './components/VideoConcierge.js';
 import { MicrophoneButton } from './components/MicrophoneButton.js';
 import { ConversationPanel } from './components/ConversationPanel.js';
 import { StatusIndicator } from './components/StatusIndicator.js';
-import { askConcierge, getVoice, videoExists, checkHealth, getLibrary, apiBase } from './services/api.js';
+import { askConcierge, getVoice, videoExists, checkHealth, getLibrary, apiBase, refreshApiBase } from './services/api.js';
 import { SpeechInput, speechErrorMessage } from './services/speech.js';
 
 // ─────────────────────────────────────────────────────────────
@@ -376,11 +376,15 @@ for (const key of ['phone', 'address', 'hours', 'website']) {
 
 setState('idle');
 async function watchBackend() {
-  const ok = await checkHealth();
+  let ok = await checkHealth();
+  if (!ok) {                       // offline: look for a working address again
+    await refreshApiBase();
+    ok = await checkHealth();
+  }
   kiosk.classList.toggle('offline', !ok);
   const shown = $('#status').dataset.state;
   if (state === 'idle' && (!ok || shown === 'offline')) status.set(ok ? 'idle' : 'offline');
 }
-apiBase.then((base) => console.info('[AVC] backend:', base || '(same address as this page)'));
+apiBase().then((base) => console.info('[AVC] backend:', base || '(same address as this page)'));
 watchBackend();
 setInterval(() => { if (state === 'idle') watchBackend(); }, 30000);

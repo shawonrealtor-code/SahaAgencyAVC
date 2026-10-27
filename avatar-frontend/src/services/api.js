@@ -1,46 +1,80 @@
 import { CONFIG } from '../config.js';
 
-// Where the backend (office PC) is. In order of priority:
-//   1. ?api=https://... in the page address (remembered on this device; ?api= with nothing clears it)
-//   2. public/backend.json  {"api": "https://..."}  - edit it on GitHub, the site picks it up on redeploy
-//   3. VITE_API_BASE set on the hosting service when the site is built
-//   4. CONFIG.API_BASE ('' = same address as the page, used when the PC serves the page itself)
+// Where the backend (office PC) is. Candidates, in order:
+//   1. ?api=https://... in this page address (for testing; ?api= with nothing clears a remembered one)
+//   2. public/backend.json  {"api": "https://..."}  - the site's setting, edited on GitHub
+//   3. an address remembered on this device from an earlier ?api= link
+//   4. VITE_API_BASE at build time, or CONFIG.API_BASE ('' = same address as the page)
+// The first one that answers /health is used. A remembered address that no longer works is
+// forgotten, so devices never get stuck on an old tunnel address.
 const clean = (url) => (url || '').trim().replace(/\/+$/, '');
+const SAVED_KEY = 'saha-api-base';
 
-function savedApiBase() {
+function store(fn) {
+  try { return fn(localStorage); } catch { return null; } // storage blocked
+}
+
+function headersFor(base) {
+  return base.includes('ngrok') ? { 'ngrok-skip-browser-warning': '1' } : {};
+}
+
+async function healthy(base) {
   try {
-    const fromUrl = new URLSearchParams(window.location.search).get('api');
-    if (fromUrl !== null) {
-      if (fromUrl.trim()) localStorage.setItem('saha-api-base', fromUrl.trim());
-      else localStorage.removeItem('saha-api-base');
-    }
-    return localStorage.getItem('saha-api-base');
+    const response = await fetch(`${base}/health`, { headers: headersFor(base), signal: AbortSignal.timeout(6000) });
+    if (!response.ok) return false;
+    return (await response.json())?.status === 'healthy';
   } catch {
-    return null; // storage blocked
+    return false;
   }
 }
 
-async function resolveApiBase() {
-  const saved = savedApiBase();
-  if (saved) return clean(saved);
+async function siteSetting() {
   try {
     const response = await fetch(`/backend.json?t=${Date.now()}`, { cache: 'no-store', signal: AbortSignal.timeout(5000) });
     if (response.ok && (response.headers.get('content-type') || '').includes('json')) {
-      const data = await response.json();
-      if (data?.api) return clean(data.api);
+      return clean((await response.json())?.api);
     }
-  } catch { /* no file: fall through */ }
-  return clean(import.meta.env.VITE_API_BASE || CONFIG.API_BASE);
+  } catch { /* no file */ }
+  return '';
 }
 
-// Resolved once at start; every request waits for it.
-export const apiBase = resolveApiBase();
+async function resolveApiBase() {
+  const fromUrl = new URLSearchParams(window.location.search).get('api');
+  if (fromUrl !== null) {
+    store((s) => (fromUrl.trim() ? s.setItem(SAVED_KEY, fromUrl.trim()) : s.removeItem(SAVED_KEY)));
+  }
+  const saved = clean(store((s) => s.getItem(SAVED_KEY)));
+  const setting = await siteSetting();
+  const candidates = [...new Set([
+    fromUrl?.trim() ? clean(fromUrl) : null,
+    setting || null,
+    saved || null,
+    clean(import.meta.env.VITE_API_BASE || CONFIG.API_BASE),
+  ].filter((c) => typeof c === 'string'))];
 
-// Extra header for ngrok addresses (skips ngrok's browser warning page).
+  for (const base of candidates) {
+    if (await healthy(base)) {
+      if (saved && base !== saved) store((s) => s.removeItem(SAVED_KEY)); // forget a dead old address
+      return base;
+    }
+  }
+  return candidates[0]; // nothing answers right now; keep trying this one
+}
+
+let current = resolveApiBase();
+
+// The address in use (a promise). Call refreshApiBase() to look again, e.g. after going offline.
+export function apiBase() {
+  return current;
+}
+export function refreshApiBase() {
+  current = resolveApiBase();
+  return current;
+}
+
 async function request(path, options = {}) {
-  const base = await apiBase;
-  const headers = { ...(options.headers || {}) };
-  if (base.includes('ngrok')) headers['ngrok-skip-browser-warning'] = '1';
+  const base = await current;
+  const headers = { ...(options.headers || {}), ...headersFor(base) };
   return fetch(`${base}${path}`, { ...options, headers });
 }
 
