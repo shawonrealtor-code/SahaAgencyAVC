@@ -27,7 +27,7 @@ STOP = set("""
 a an the is are am was were be been being do does did doing i me my mine we our you your yours it its this that these
 those to of in on at for from with about as by or and if so can could would will shall may might must there here
 please tell know like just also any some have has had get got give let us them they their what which who whom
-how when where why one ok okay hi hey um uh really per guys actually all each usually so then than too very
+how when where why one ok okay hi hey um uh really per nefa nafa nifa guys actually all each usually so then than too very
 """.split())
 
 # Different words, same meaning.
@@ -55,6 +55,7 @@ SYNONYMS = {
     "requirements": "require", "mandatory": "require", "law": "require", "legally": "require",
     "best": "best", "better": "best", "pick": "choose", "choosing": "choose", "go": "choose",
     "insurance": "insurance", "virginia": "state", "va": "state",
+    "abc": "avc", "avg": "avc", "avs": "avc",   # common mishearings of "AVC"
 }
 
 # Words that name a topic: a match must share them.

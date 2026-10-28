@@ -9,6 +9,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(Path(__file__).parent))
 from faq_source_1 import FAQ_1  # noqa: E402
 from faq_source_2 import FAQ_2  # noqa: E402
+from faq_source_3 import FAQ_3  # noqa: E402
 
 DIGITS = "zero one two three four five six seven eight nine".split()
 
@@ -18,11 +19,12 @@ def speech(text):
     text = text.replace("(703) 627-0444", "seven zero three, six two seven, zero four four four")
     text = text.replace("sahaagency.com", "saha agency dot com").replace("HealthCare.gov", "healthcare dot gov")
     text = re.sub(r"\b911\b", "nine one one", text)
+    text = re.sub(r"\bAVC\b", "A V C", text)
     return text
 
 
 def main():
-    entries = FAQ_1 + FAQ_2
+    entries = FAQ_1 + FAQ_2 + FAQ_3
     library = {e["id"] for e in json.loads((ROOT / "data/answer_library.json").read_text())["answers"]}
     ids, total = set(), 0
     out = []
