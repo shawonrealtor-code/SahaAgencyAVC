@@ -29,6 +29,8 @@ def main():
     ids, total = set(), 0
     out = []
     for e in entries:
+        if e.get("video") == "self":       # AVC answers: premade video answer with the same id
+            e = {**e, "video": e["id"]}
         assert e["id"] not in ids, f"duplicate id {e['id']}"
         ids.add(e["id"])
         assert not e["video"] or e["video"] in library, f"unknown video {e['video']}"
